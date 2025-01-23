@@ -1,0 +1,5 @@
+creation_rules:
+    - path_regex: .*yaml$
+      encrypted_regex: channel_url|fixedPin|privateKey|password|username
+      age: >-
+        age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu

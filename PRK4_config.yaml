@@ -1,0 +1,41 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:8M0lpp6QklP/Go862d2S1RQnthA46fHpH4apRRKSGPBk5WaKjrroRZ9uPtTmr1/OJx5dqUDyM2B79A==,iv:elWPsV6LQrieUbMv2o/BB34XeXg8pLj2rdYhvV0n64Y=,tag:W+IgEhFEzHP8MT/n455nGg==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:9lsShXJA,iv:ks2MwmnyMnY8EpHYmsrK8a1yrroeX62znij1ljQlfhM=,tag:GlHrO6vUS7sRZVg58HL96g==,type:int]
+        mode: FIXED_PIN
+    device:
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:6s/3NDhAXX1YaMmzjRq91pB6bGlUc0STKHMFFbAgZadzt5X/aL2X9XcrGQZo0ZVufy5i,iv:TpJqhMJzkthglaNVsWXeLeRGPbFo1kXTsEu4+Fh+ygs=,tag:SLHLKBmQdZDc8W7er27/EQ==,type:str]
+        publicKey: base64:plCrTmweKWS+JMyclkBUmbT19u7JPZTjxoUjUOcmVgk=
+owner: pork sidekick
+owner_short: PRK4
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBRL0VCbk1jbDlxemdlZmxE
+            dkRoY3hvNUtDUXpxY0FVeVYxeVFvMW0wcHkwCjhiSnFuSkVPa29WUkRVSTBFdi9O
+            NXpPSTIzTnl2bnZTQWR2Q0NOb2dxbUkKLS0tIFNCVGZ0MnpXV0Z3aHJSdWsyVWNx
+            WThmV1l6SS9YcWRGTDN5MEtOR3VRN0kKZ6YEO9ilCrYNssMu3bqWaZHL2QFMQkPT
+            nso6WeHjEBI/hAdbUUK9VIAUbbrIqwAcC1eUoIHpBz2mMJDIXQZjRg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-23T01:35:26Z"
+    mac: ENC[AES256_GCM,data:FYmgU+liZdL/GJ2GSLp0xf/YhIwEtujFwQaAfyG9f3txwlpfMnOKHD/q3y+59AZ5612YRnxxUDgm2igNagSsakeWftxPkppaOcdp2ElyXQll1IYvYNFxxsvNml/LEw0Ayqm93c3UFY6SlwHeU/QaHa364QPlPWpKUUozfeMTlvk=,iv:rumy9yvN8iNVhniGJV7W05ZEcirVhrieF0qecKXK+lk=,tag:ufQuo+Lq8bdxKuVRMQTltw==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3

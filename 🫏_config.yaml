@@ -1,0 +1,51 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:l5AJfe05UudS1iSx1FHnLbwu5cCY2mdVNgFW7ZcaAxsYeYgtnIZSeMpOrXT4mT9EDYSyUb4rDFTV1A==,iv:JfzAmT9YC2Fo/eN6/1vB1cDJxfwnSuH1voT75z0a3aQ=,tag:X9UwdbguypRsCMdi2QMZrw==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:f1AudJmM,iv:3uB9Wh5JJySL0Y5nZbzBce+EXLMtssst4grYUBTtEmk=,tag:FP8bGsYLXYMHGxIU5e6gHQ==,type:int]
+        mode: FIXED_PIN
+    device:
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 3
+        ignoreMqtt: true
+        region: US
+        txPower: 20
+    position:
+        fixedPosition: true
+        gpsMode: NOT_PRESENT
+        positionFlags: 811
+    security:
+        adminKey:
+            - base64:3NqT8FZt5GsJkYOoU7iA1Eo7Bbs+lS3/H5JY5izdUHs=
+            - 'base64:'
+            - 'base64:'
+        privateKey: ENC[AES256_GCM,data:uVJLk64G5HrnLmITisDPULHmoTPCxo3tSStCznhY/aWzu0F+wTzB9Gf+3dG4iqVa4avw,iv:+gR18M3hv3CS6J041VIiDYXixyRKZVz4heubq0c9Rbg=,tag:o3SRyQ3ZikY3hl1lzFv1Hw==,type:str]
+        publicKey: base64:Kz9dv/LbDcV1giPfz+QQD7NzYEa+KSCHK4u9OBJgy3o=
+location:
+    lat: 40.7109632
+    lon: -73.9508224
+module_config: null
+owner: pork donktastic
+owner_short: "\U0001FACF"
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBuWVdBcERURTByNURpT2hR
+            S0tvMGxEZkNOeGg0OEtUcWZvdmI4c0dlS1JBCm1EOGFTazFlR2J5VzB6QjJxWmlh
+            RjExbWxLZi80c2tDekp2Vm4zcHJUSUkKLS0tIDBORzI3R1F5bmVIZXMzOFZqRWRq
+            M09OWTk5UXA2cnZVYyt0S0haejY5QTAKpkL7bn6mBQuMfUHbi8nupOJaAmg6Cick
+            rEms654kPUUQEmrQsBQkpu1t8N4SZ0QNM7X5jMMkgSgQKNt8m2e99Q==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-23T00:24:20Z"
+    mac: ENC[AES256_GCM,data:5GC75lGMZsZi/lMGKfFeddfVneGUA4aSxma7FaQg2uro/BS5cW5wx4dsNWxkBWKtmpBJtuHXOq2rev34VBJigmjvrUP5fGNs6zZco5b6sdvSWOT42n8c14tkeaVU9Y6ffG3B854wapeSiOGZ3ObUPMK5qALXNw8/jlsvXIZmrSs=,iv:jonHFd1iKi2vG5pjoYkUs59Z0mtyArbcNf68/3u3ugQ=,tag:kPrWE0MCV0lRUtf6DJ6e7Q==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3

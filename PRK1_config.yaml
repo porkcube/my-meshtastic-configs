@@ -1,0 +1,55 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:DfC4EAQUPeV2bFkjszoXzccAGOlx6IlkmWNH0BLjpTgZ0RFbXvvFwEzux0ySUdQlynNFbq8kgv7Ln5d6VQ==,iv:w1y9kzJt3TT/NYgbExUxiANtJBIsupkukgEKN8sWJ6s=,tag:k10yatW73rwmcFGndt+bGw==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:Y+uZOigw,iv:q08oeOrBg+MtDMxAFbRJ6H2uvUMOGO2SSvmyYu/MWAM=,tag:xRAnCIWobIamYXPl7TFatg==,type:int]
+        mode: FIXED_PIN
+    device:
+        buttonGpio: 31
+        disableTripleClick: true
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    display:
+        autoScreenCarouselSecs: 10
+        displaymode: INVERTED
+        screenOnSecs: 60
+        units: IMPERIAL
+    lora:
+        ignoreMqtt: true
+        region: US
+    position:
+        fixedPosition: true
+        gpsMode: NOT_PRESENT
+    security:
+        adminKey:
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
+            - base64:3NqT8FZt5GsJkYOoU7iA1Eo7Bbs+lS3/H5JY5izdUHs=
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+        privateKey: ENC[AES256_GCM,data:z2vlstb19fM0yBJ+7nwt86E32cK28PB6N16Gf5rIeDa1hFuGEFK4Bv+BF5mw1W6rFV8y,iv:oKduPR5KUMxz0LNZUSnauZ8hidcXBQSR7srMabdR5aE=,tag:oaODEI+S8JXlu/oBb2hZ5g==,type:str]
+        publicKey: base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+location:
+    lat: 40.71
+    lon: -73.9515
+module_config: null
+owner: pork d446
+owner_short: PRK1
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVY0lJUnkvc2N5UVVoYUtk
+            MHdqWm5wYWdoUEg3TlJTQUplaXlaaVRJeFIwCmNxcDhzR3RyY20zUExUWk9yRVZN
+            bE9qRk9pVXNRcmRZL0tUYnFkdm1wcU0KLS0tIDluNzdlRFBQYTh5TG1zNWhIQXBk
+            b2xNbFpKbnlGQW01TUNya1laMEk0c3cKJ6s/IVhl7Wnx9wj0k4QdNgTItiCveWaS
+            C5RcEFsTk7V6JsKuA9cUq4IYjJFx9LeX5VYG0nE6Z317x2o0n8J7/Q==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-23T00:19:11Z"
+    mac: ENC[AES256_GCM,data:Df01HM8uq1Lh4ln5TKZltdlwLCqJqZa1Iwa/8cEws16V5K4QNUiOFbgc1pQsvCLjgG1ak26XSbgxXuba+SRYQEJH/BRBOB1+oYmNmcvcraKB0xdlEl4yJgOKu4hqLmYQHCR4WHu02f9EammbZLO9EPodLb4zVBMS01RRyYIxgcE=,iv:DHpmmnm/C0wqFi+jZUf0Gscr6rECPej+WS0gQumV7R0=,tag:RQbTbCaQguFazbsGXs0J8g==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3

@@ -1,0 +1,42 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:Zjhoe6P2kD3bfuNhrsA1iEvq3TkuS8xzaaXdOObSOIGh/CvzORwe1HvRbt09WgmWAdIgyn2U,iv:drnGeZnZypRyNHxhf1fMU8T7PmsYiO9shAtrYqw+7lA=,tag:Fb0Po2KTGM0xj+IlPFd8dw==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:HmvGe06M,iv:jFgvBNb30SgAvoPh5f3TEY9m2uOrm/5fABEhHDESIRU=,tag:Q5eWNRm/QpiYsSR09Sj9cg==,type:int]
+        mode: FIXED_PIN
+    device:
+        disableTripleClick: true
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    display:
+        screenOnSecs: 600
+    lora:
+        hopLimit: 4
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:+3S1X7lBi10m9a+b1Ebe8AWzq6JTtAFG5E3kLaSiIJUn9A1uX6D58jH4Gs0fcKzrTbeS,iv:8uDA9w8wpqRsjKP06zquSsk4UnGu38TaSVf9wH1trTQ=,tag:PI1yQQrV+OfxETARixHzvg==,type:str]
+        publicKey: base64:QBLBUOucTMC4fPar7CnBP5agk5t8dVRKhLl5wi4qxGw=
+owner: pork cube
+owner_short: PRK3
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwOTJJN29iNWNMdFo4Szg0
+            bk12NWN1NWc5cUVocVBEbklhNHJhc09HK1ZBCkc5L0w3djFLTE03cndBQTZEZ29K
+            SkFvTXlvZFhHd0tmdG51OFhHWVM3MVUKLS0tIGYzc1dJNzVwSGNTaHVZWElPdnJn
+            VzlTSUN6TUIzbUtaTkVsbDJMTklSQVEKLHgnsFNmTk1wGhx0Yv662GkRIKpv/9oS
+            kGOrDwxn9uI7lkAHJWY1n43h2VzGAY3p4LVClA1F0xgaHB2w7Q78UA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-23T03:22:18Z"
+    mac: ENC[AES256_GCM,data:FNCDouD/HDYaFgnIkJgTmkZuW/qfquylAjf2VBU6Xm+KTPYLVWHAIPcho2t7IiOYx8JvHK7SJ0WVtrM40aH09dJJLXBkcHXX2ZXL3EsqMJXuDyUOyHpEfIygJMfA5XtXWWRf0/Id/rCbC0dk1nEPOU6vYzvoQc3Pn+qBZWwO89I=,iv:NIQbebs/D+GNMUW9ZGmUuNCkMuo4KbKqNHcHVyuEf6I=,tag:N4nQHKfCZ3NynkOuDUktZg==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3

@@ -1,0 +1,41 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:eGs9f99HkeD0Osq9ILrzL9dVWVkVx6LFJyT4P3sy6ATeCuFU1+TfquFaGa4G6NIELzS/zmfe1b4+ov5oVg==,iv:HKnOjto0nUCcRL68NPK/oncSASVRJQ/Jd/lYFhDBNo0=,tag:h7LW70Z4FtMu1ob+P2NEbA==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:UwS5s1Qj,iv:Gr8TmZWQ4BU7C2VFu+dV+BybhmmSYsA+W3Qa7LLJYwY=,tag:UWLndcsk9aBFQCB8hKjNHQ==,type:int]
+        mode: FIXED_PIN
+    device:
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:evN5AjBna0mYX9hkPdoawxPahfGsRnDPsWocrSfV+pofZGOA/m73Nk69fI7jSRncoTvm,iv:ILRo7RYYZatuucd+f0XM3vuCxNj5GYhdwO57lapXvto=,tag:AkWp73yU+78xf/ufcmFTrA==,type:str]
+        publicKey: base64:zXteh5KsAlU2657LidIZMNcLPAcbrw5xagzIcqm+cEI=
+owner: pork faketec
+owner_short: PRK8
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxZGtlZ21PRktRVU9JZlZL
+            SlR4bDkyVUdYOEJiZ2dpRTZsK04raU9EOEdnCkZOSVc5cnZqampMdVFiSTB3aUdF
+            WkMzeUJ4eFdPTDN1ZEhFTUlFa2RaMUUKLS0tIGVMdXpPMWJTR21ZTWpEalFOT0c5
+            T3p2QWMrazBHazBLOXZ1VFRsNnJOU1UKulMGwOjhGm7sGSv6b+JYU9c60eaomfLT
+            McflKg7d14HIuiH/QuIyHdphLcwPul2UhQ3jNVLKSUHlfE1JWgbhVQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-23T01:39:18Z"
+    mac: ENC[AES256_GCM,data:TZ85ONeC87032At/BOVG4lNSg996XCFzE+C2LDWLtREqoqrk6iLOJylreTjaRBDhRIad4m4XlfH8clFVtFt2aNYi+dKAi9vaUoOEWnYeTgxNflh2dFGlrzM61Di42kLM3OL9ynEqoWCHVC2qQRUxAdsTmxqzGB6hnbkB4Grv/ic=,iv:Sk3s7F406u72g8B0K2GPULnF/LKvTbsjh4UTqGkppdA=,tag:qQ0Q8wtcAwkVQRKBvK7L5A==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3
