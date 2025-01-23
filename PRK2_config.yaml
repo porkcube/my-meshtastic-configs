@@ -18,6 +18,10 @@ config:
     position:
         fixedPosition: true
     security:
+        adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
         privateKey: ENC[AES256_GCM,data:BFD8Zl713c6OxlMx6aBUrV+i2wYhFej8Atrh4waTnBX6P5ox/0/D8DXAlVz6MYI58Lh5,iv:fJf/XgRZ59fkGwllfmpSRSHQdDRM7qWAlOE4o9ZfgGk=,tag:4/uyEBdnFWVLxLpMD9Hl0A==,type:str]
         publicKey: base64:3NqT8FZt5GsJkYOoU7iA1Eo7Bbs+lS3/H5JY5izdUHs=
 location:
@@ -40,8 +44,8 @@ sops:
             c3N6T3NLZExMMDJYTGNNWEFPVVUwRzAKprmWrYYxXk/Ve8Yu/4MIOKRfezpucZ3N
             D1zw1AcNdsCE8FwcQ/29WMrhg9qqP7C1GjU5caZOmIp0p8XW4NByDg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T01:51:54Z"
-    mac: ENC[AES256_GCM,data:Ka7bQDxSFT8ip/5VLjL702PPPvzqsTeNZdyW4t9Pkuh/gnD8lNwoTUgQhsedgxFvTveG/jz0PXpju6u00anquzSwiREb2NQx2+FVaDddMsjdliZEpkyR4XbIhaLNbzjsDf5dS/bOb1PnPnO7xXh883C1KHL6gFV/kqji1a/Pdwo=,iv:vfH66wv6Aa8d8Eg0qzqwA+wVQoX7ugbo8LIjM54Uv9c=,tag:r02SMrIv9qbSPWXzSS3FHA==,type:str]
+    lastmodified: "2025-01-23T06:26:18Z"
+    mac: ENC[AES256_GCM,data:a0JRXEacRvLRKg2enNTHZzfI/+eGkz+NaNGDfKL0DkltZJyXH52Hqrs9rKK84xA4ppKLhJ8BnJrkgXZh8FnETOpHFEcLN/8Nj84mFQ3lQE2m1eEff8NEbDIbl1Aw0EdPzs98VSIzowd9KUIg/jLvyFPP0WevjkpPqU1j6Ya65yI=,iv:y6O1DUJJgCylAXj+FuiY82uOj97+MtHxBef78FcOSiI=,tag:ZbldvrslRl5doNK1RC+JyQ==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3

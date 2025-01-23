@@ -15,6 +15,10 @@ config:
     position:
         gpsMode: NOT_PRESENT
     security:
+        adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
         privateKey: ENC[AES256_GCM,data:wV9P29+mJY/8DuzVHeGHN9nd0NfvTAwK5razxkvpVs77L75rwy4PsI1UjJ+7Ste9TWhx,iv:CI+IPnV00tI/dhLCXm4XvhoC8RK6gYiKl2WFswoNwrM=,tag:sSHmw2MxB6S/iLJfYP4QIA==,type:str]
         publicKey: base64:B1bHSftFmvevOhNCMKe9Sb5tZfPUsEcDBJLslk2/oBM=
 owner: Meshtastic b979
@@ -34,8 +38,8 @@ sops:
             RDZ6TlFCZ0E1RkxYdFNwZWRtZjlXMEEKKtOHi4rK0/Q6AT26wh2UV6fTekBk/qoW
             nnt6VxNmcKDgrJnFC81OlMrL+BiROP+4oO4lVFF8pJczg1IxWpWPRw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T01:52:08Z"
-    mac: ENC[AES256_GCM,data:UE6eZvFD7Yrhj8qZS21hPxcKW7NY0QrGCVEOUi2+rs98eGBivN+SN83cd+EyXzRwYLImA9EZ6TitQYcPyCVKL159JIGUiMGQYT8weD1Ssnu6HJhtOaTO85vhzPtOrGhqNgx/mGNyDvn7wtjaVnU1gi018ajYhSsj2BM8OLJmqVI=,iv:Kya3v2eacn+oyrEr/jTSgljO29+Bw5I+aIdfyvDQw6g=,tag:TpEqSvhKbHGy7+cy5bFeHw==,type:str]
+    lastmodified: "2025-01-23T06:25:26Z"
+    mac: ENC[AES256_GCM,data:o/tmSlnXRm3mV+2C9tribHbUZXwKMiabAnNF65wFE2NvareClY3rbOwzaYTdKQid+gZIyFA7GyqY/C6UuHy8RvfYeuuPk1qWmAdxEw/dus+UwOo7X/10ruGGy8ZfbRaGGqbY5Q9wqspenL8HBT1o9rzyL6JfBdecyX0uU1cZaQg=,iv:V7KDb91xcSFgMuzwQbIUF7JCMc02JJtlVudzJ3VNPcY=,tag:DJ4sNT7IvhpGHIb6QvxCYA==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3

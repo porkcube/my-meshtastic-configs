@@ -18,8 +18,9 @@ config:
         gpsMode: NOT_PRESENT
     security:
         adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-            - base64:3NqT8FZt5GsJkYOoU7iA1Eo7Bbs+lS3/H5JY5izdUHs=
         privateKey: ENC[AES256_GCM,data:N/wN4Q0yDDYNmsFNr40kfejVPWXRDarhHOrEIgPOL8lziT6xlO5UP70xE1pbg1DLlMPU,iv:zCGMjUdrWvAGwWxoSchNknHtQF0az5wp0B0wCaWUy8c=,tag:16p6Fu71sb0OqbPgshzVbg==,type:str]
         publicKey: base64:Q6bVoME8GWxqsTdmZkZDXB2T6IR18ret860spPZiYB0=
 location:
@@ -42,8 +43,8 @@ sops:
             czFLUWdhUmxBZ09CdXN6U1RFamZyWGsKTxo6UMSLWjT/6b/SpsRf1LHbwHBuKOUd
             +0jLcjPSrk0frVd4LoKh6oa0qPk7pWglWvZHH/9xiOfPItQaVj784Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T01:04:37Z"
-    mac: ENC[AES256_GCM,data:N1pwdICvQoeeMuennVEamwiNvEEzIdpYD0crtWx7JjsRgelXn0UIja8POBEah+1hg3ix+O0YsLo5O6gsny+0q7obanel8S4c4jPytaongve7vCr+j6SL9l+aIDsQykdBgVV2FclM4rbause7L6qKrtAZpDAOEpyfIiZd1gUh86k=,iv:INGyVnpc/kEcCa4UbJ1GmOy7LrCmkkQqOHRI9ZmXNwo=,tag:jNtd+ziiAn3yh3chp6/liw==,type:str]
+    lastmodified: "2025-01-23T06:26:56Z"
+    mac: ENC[AES256_GCM,data:B/fMQ5iN00jVdO8TFaiyobAPpam4v8VygRs67NDQhJZ+ACAya0NLPbFeC3DeowDBZRrSCTJMxsQ7SZy50e+bWH/pFQBNcwlkINWJW+rwIj/D0pF4k86hZ6dOqA2OvVux8Cs9g/P+S1a2I05CXIYEhLbvfiQ9x1tNNrZO0i40rcc=,iv:0xtBEZtZleIGdbfOq2RTBuKG/af3fY+7WW1blWVY8GM=,tag:uYmmq5yT1ee+0C589JYZdw==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3

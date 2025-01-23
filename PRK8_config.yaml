@@ -15,6 +15,10 @@ config:
     position:
         gpsMode: NOT_PRESENT
     security:
+        adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
         privateKey: ENC[AES256_GCM,data:evN5AjBna0mYX9hkPdoawxPahfGsRnDPsWocrSfV+pofZGOA/m73Nk69fI7jSRncoTvm,iv:ILRo7RYYZatuucd+f0XM3vuCxNj5GYhdwO57lapXvto=,tag:AkWp73yU+78xf/ufcmFTrA==,type:str]
         publicKey: base64:zXteh5KsAlU2657LidIZMNcLPAcbrw5xagzIcqm+cEI=
 owner: pork faketec
@@ -34,8 +38,8 @@ sops:
             T3p2QWMrazBHazBLOXZ1VFRsNnJOU1UKulMGwOjhGm7sGSv6b+JYU9c60eaomfLT
             McflKg7d14HIuiH/QuIyHdphLcwPul2UhQ3jNVLKSUHlfE1JWgbhVQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T01:39:18Z"
-    mac: ENC[AES256_GCM,data:TZ85ONeC87032At/BOVG4lNSg996XCFzE+C2LDWLtREqoqrk6iLOJylreTjaRBDhRIad4m4XlfH8clFVtFt2aNYi+dKAi9vaUoOEWnYeTgxNflh2dFGlrzM61Di42kLM3OL9ynEqoWCHVC2qQRUxAdsTmxqzGB6hnbkB4Grv/ic=,iv:Sk3s7F406u72g8B0K2GPULnF/LKvTbsjh4UTqGkppdA=,tag:qQ0Q8wtcAwkVQRKBvK7L5A==,type:str]
+    lastmodified: "2025-01-23T06:27:22Z"
+    mac: ENC[AES256_GCM,data:X21gJR9dqTWZKNvtLSJFAXJTkWH2vyXGIHeIxyPU932ad+K2ypNT7Upq6+baFhxoBIiIrVMo7Js17/jP5jW3CfpNlD2z1j8u8HqnP0Ph1Y0y2pTIU8q3dNP30N1QFXWzN2MZD7heH8sLr54M0Xz5uuz2LOFt6BFmAb1k65gls24=,iv:3IoIY2/W65hqSzKeL96T+500xphdpRiC3n/KhVoJ0Sk=,tag:meIKd9HNz/t8+DaW38IL7Q==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3

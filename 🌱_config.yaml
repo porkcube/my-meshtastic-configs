@@ -16,8 +16,9 @@ config:
         gpsMode: NOT_PRESENT
     security:
         adminKey:
-            - base64:3NqT8FZt5GsJkYOoU7iA1Eo7Bbs+lS3/H5JY5izdUHs=
-            - base64:Q6bVoME8GWxqsTdmZkZDXB2T6IR18ret860spPZiYB0=
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
         privateKey: ENC[AES256_GCM,data:lSuRnpOzxd3BzHASoK9ubKdbprIl/zRpGf4rvlqRPQoxI0INh33tGy+D/eeA6Xn08Q1f,iv:eg0kalSqm33VOfleV2fPBcW+EfoGr+UmZof958Xzc2g=,tag:IMkdOeAijuQLBCWiUamkKg==,type:str]
         publicKey: base64:omT6MCOmhjk9cmngMRoe9MN3KZi8inDuIqZ0m0Al10g=
 owner: pork spearmintastic
@@ -37,8 +38,8 @@ sops:
             Wms3UTBqZGdCWGhTVFNoeXRmMnk4dmsK3wNbbVt0bli1T7OECnhEc3FtToLE12Lu
             mF+E+5lHPdN1tZZ8T8EZvtnHdzoJoZ+/eZXg5kny4rS8+oD7QrycqQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T01:55:55Z"
-    mac: ENC[AES256_GCM,data:rRKImDkg2Qa8C/NI3RBxTp+rBAvSuLjbAqLEFujg91geOoLXuFCvW8SDb338XTNk6gaPmsHSxZeATlpNs3pr6nbNCCdKJ1cOQydGQHW8CpqMi1ao7kFFrl13fua+61hllDXAa1oayhZT9SAsK/Q0e4iyaCTaapW+Dbkk5XH0awA=,iv:XUTWnstauaLHVsfp2QWjM6G4RJNZKKZgWCbxvKTa5OM=,tag:z3D0FEY9Rs0OAz02ZeTWIQ==,type:str]
+    lastmodified: "2025-01-23T06:27:32Z"
+    mac: ENC[AES256_GCM,data:Ye5YkEZx+GUurMy1ZhsXMzsKJBnks618y8UQZhv7pj3YCaGwZ1pSEj26+ViasXNg4ELLZzdhncFPo4JisY2ZFSdkvgDUlcmONWM5qxJmFALaACMilZvzDFD1K8xo4vcbuAeg6S3sqdGr6SHg97LtC272Bg+RCrMbUNa6/4ZlZ28=,iv:aRH03wUzKfnYwmouben+tcK4gbzo+EHoXhLEWeIDAxo=,tag:rr9V5acp0ZSjf0tzirNd9g==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3
