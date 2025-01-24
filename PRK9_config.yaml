@@ -1,0 +1,41 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:YfHfX4zFiLUl68g9b/u3UO7PdiQZ/aTkY3MVLElL3b0LDrVBLKVr/UcBj9da3WGn+M/q3ewo,iv:OmG8k4CncpZ1JDfIvGo/hCmyh6st1Tk4hXpkq/U9TUQ=,tag:VHpuQQoGFDVKZh92vCaE4g==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:Wm4qXd4Z,iv:xbGGJS2eCHO2kFDEYA51a62rpCV08VmKeBJHwOy0X6c=,tag:EY4iImoOChih6FittcFoVA==,type:int]
+        mode: FIXED_PIN
+    lora:
+        hopLimit: 3
+        txPower: 20
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
+        privateKey: ENC[AES256_GCM,data:smszoIORX0KaL1w3Sd0W7phQ5W0gSScNqoQEMfDKNpndyFXee5BI2Bn1xp6dQOcEArjn,iv:ayvV6XI5KaflxIo958SwZINgTxAM/nuXZxTAefQ/u4A=,tag:sBWBcH4VGblEFd7WDeapdg==,type:str]
+        publicKey: base64:77X3Tnk2u9QHdVUzNVeVdw5QO9E7qv7+v1ikFkkJrjo=
+owner: pork ikokananov3
+owner_short: PRK9
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsaVZEbkx6KzNYVHNvZk9o
+            NDU5N0JCcEkvR0YxYlRmeUVNQllzZE9oZUMwClBwb1RWQzNyRlpSTndYL282SWc2
+            MzhBdGlibDc2UlB0YmZvVGlYUW5hbkEKLS0tIHZYTjZvNFZsL0djeVJHc3liUnBO
+            ZFM0bkdYRVgveWlLSXFQNEYvaGNSeEUKNcz8uFf/64n4IjzrpWsXuCwu0hMuC1Bs
+            WYiXcyVG0MJIf1jJErZmSocbdvY2/lbeZkjW33IZJ042wsvYfLZmJQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-01-24T01:50:47Z"
+    mac: ENC[AES256_GCM,data:7CX85GO7BzrA3lfkWMfp3bVWgPa2/w82Dg4mioRpiQjUU0S6tnsZ4BL/Wwgw7eG8zb+GwItnD9zStXGyuXbzXv9g+HM+Yi1okQHaxYmGeQdLgQ8LVAVDtevgRfkVKIRx4BLi/zqFwaLxWXEjVJi1987qStQHOFijssxX3R2u+tg=,iv:v7oulZjcgRErfi7iVr7N7oEovnKy9ZiPqC2Qa7vPCIE=,tag:DRgtMAOAFSySswN782SyEg==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3
