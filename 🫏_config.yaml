@@ -24,8 +24,8 @@ config:
         privateKey: ENC[AES256_GCM,data:aI/lZUCqI21n3q7WVgMDYRhKG1ghn913qc/Mr1e1Kn+uIGUy7KE/GHFfE7jwjsxBTByz,iv:qKjOk5CVLId1JgiVyuaPgGp7eM8feGh0Z1Mzrg1BCvo=,tag:OjZUwzOcFegaWP+umnCQeg==,type:str]
         publicKey: base64:Kz9dv/LbDcV1giPfz+QQD7NzYEa+KSCHK4u9OBJgy3o=
 location:
-    lat: 40.7109632
-    lon: -73.9508224
+    lat: 40.71
+    lon: -73.9515
 module_config: null
 owner: pork donktastic
 owner_short: "\U0001FACF"
@@ -44,8 +44,8 @@ sops:
             VWtDUTV2RGt5NG5qa2lkMGI3dTlCTk0KvNJdXc56LrvkaJsZpwsnUMnTCfh5xdZ0
             qIUkSg/4vQKeaOMo5sH4Tp5oqw5HmxIppHyJBzxJ513xMMX4fKADew==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-25T04:17:15Z"
-    mac: ENC[AES256_GCM,data:PIMP81Se51l8KBU5im01WS3SnpmHxmrPHUwTeBqbxnkwhCqZZ4b6eBYneOWccm80rqM2iIY4rneyetejw6dpWjTIIqxLk+R5SiuNett/ujMpD1m0EUGwhDSJofEydi+dblo7gu2XL22A+a2ZdP8cWdmQ+fR1yTuG05w3+NFa3LI=,iv:EK4u0gq9KSMJp9y3bxMUrTQ31BZpq0hUadz0bt3FyAo=,tag:PCbkrUdpaQ2610hIP0YIzQ==,type:str]
+    lastmodified: "2025-01-25T06:08:27Z"
+    mac: ENC[AES256_GCM,data:TRykj5MbGwJaf5hkoUFhX2PU3wHyjUi91AtCkixUnJJ4RqAinjNBqdDs91SxbY6E8XeDhB1IMjBWgcI9YdHNUdvrAwqNkJBfZ9GPzbNmwc3QwRc7Xd236zwqzF1dBr//dSWu33SBrMlIXPvpx+4GMyTb46XZwx3LMqDDghpYZ6A=,iv:iYTHVvyik/kLPTUkUkLe9ONtoi3LmOEbJHBbW0uFQuw=,tag:P3EoaqQte5SVOXNlNAAmHA==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3
