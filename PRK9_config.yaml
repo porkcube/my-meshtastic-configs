@@ -7,6 +7,7 @@ config:
         mode: FIXED_PIN
     device:
         role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
     lora:
         hopLimit: 4
         region: US
@@ -37,8 +38,8 @@ sops:
             dWhXbEJ3eExQODE0bnMwOGIyMENSY1EK4tgHXseOl//mVb+4CuOKzrMbQkUd89vb
             WTPEosQtHVBV5jCopPMvOP7glm7pO5V3AecNcmOoSnvwgDf6vQB0KA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-24T01:55:06Z"
-    mac: ENC[AES256_GCM,data:qt5jkZHi88YF7Q7l2sqswVoX7mS3WfxC9w5rOw0kZNGA5tlQIk7cnaJcEtFar4DLBPZrqudN2l+DEqR2a+LrTNBpWimEFVq4vkwMyVusDGl9Fceq45nfeCGW1IIE9LfmREEgkLCageOqDrjrzVgEnc+CK8E92aRXSTB824LBtWE=,iv:wFAU/6ayamSGYqf2Vo/Xr1KsJc0QSq98WwLkslO/TQA=,tag:X7vEci9Ei3gWvcwPG7tbdA==,type:str]
+    lastmodified: "2025-01-24T05:40:32Z"
+    mac: ENC[AES256_GCM,data:Is+PbkAACO+w2Ov+UZ/ddA8W9cIy+u5FibpRp+u3/NvH/7rRE+YNzIXuXReSqq7C8dKnMcEBXQ+XnFPLrP8V9QkG6Oo3wQy/ucIHco7u/FejNYm89c0rcrxflHwpqSVFzyGeiHJUQIeAM6sZEzH6Y4m+3xqv93giQCwkthN7sQc=,iv:aX08SagT0eKndTN82UeRWliANBSRU9tGAVRyCDEy9rs=,tag:7rTISRv5PqOXLsPSi2vcTA==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3
