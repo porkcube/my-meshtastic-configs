@@ -1,0 +1,44 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:c/vCTo/ICHtJ7UCt98CnbSWooI7l3sojGlVMSD681/C7sG7K4MgqWmFmNkhdyfSfc0JEQmqu,iv:/oD3a32RokTmc4kl1m4eyHzcf+dCoPg+3HcLo+r5me8=,tag:AM6UczoWWtwxQVYE3pWixA==,type:str]
+config:
+    bluetooth:
+        enabled: false
+    device:
+        role: CLIENT_MUTE
+    lora:
+        hopLimit: 4
+        region: US
+        sx126xRxBoostedGain: true
+        txEnabled: true
+        txPower: 30
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
+        privateKey: ENC[AES256_GCM,data:JR8y1QQFfVjRG1Xj/pQxGoFZFWGOhqvDkUFZA7qoJJBs0Bd068lz1DY90X114YPSHfbv,iv:phIgxrUn6e8pTDeMK+Au2WpWuaBooB9aU0FI1Fmx0YA=,tag:6TLDrJIRvja74uer0iStSQ==,type:str]
+        publicKey: base64:a4G5cY5oxpNueGSajNKmDzRacraL23VgTvBiHw2e/iY=
+owner: pork femtofox
+owner_short: "\U0001F98A"
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4aWRLNlZMSkFBa0ZuNWpq
+            dVg2L0RtK2NGS2FXTjErQ1lDTXBZdUpnYVJ3CnI1T2NxN2YzWWs2eFljWFhVaXpm
+            akQ2bEtXRUZCaTRFTXlpa2ZKK1hNbDQKLS0tIE9ZZlZTYkJCTCtwZENGNG91cmJu
+            RnIwaG1MazRHdXFad2xtSyt2bXJLdGsKwOJ3LxsFgmmRYd/MJXKdhxgr0HdE4mvk
+            g8PONS4sidH3DxxPIv9jwOe30CL5QmwFU+smZAbze3F0GU+EUb87bw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-02-08T16:03:17Z"
+    mac: ENC[AES256_GCM,data:wKMidA25Kq9U9zs+bEKop+eFvz1rYurNPo/HYWrlneTBf4ZfZmm1TxD2q9i9QLdeK4r1x6sS2q/9hTegzFzZJvRb8wpx5CT4NYIxIhLlM+4+LriJmjo403/E6r7S5AxrKtuXtq02kctIT2vN8PZS718EJwceapzQ4XqwrfYQ9V4=,iv:LCt4KvM0j7qfzetPYKsKrRbHrmVshDplLCk81I54OJg=,tag:vxT/WHIWM9UR5cY1lbnH8Q==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3
