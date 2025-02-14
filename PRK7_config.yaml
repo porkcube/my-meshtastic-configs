@@ -1,0 +1,54 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:NeuFFwarZZHaFedmZr/1nszW1YSVmyGUUFY8vuSvqyvur16Knu/A1faNQ/x2PKwHppHrKbwr,iv:84JplUxUMr4knN+FJLqCBnwlhjRdaTvOuSYDit5/62c=,tag:5dkEbW2XM1kGfxe+WQXoRw==,type:str]
+config:
+    device:
+        nodeInfoBroadcastSecs: 10800
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    display:
+        displaymode: INVERTED
+        screenOnSecs: 30
+        units: IMPERIAL
+    lora:
+        hopLimit: 5
+        region: US
+        sx126xRxBoostedGain: true
+        txPower: 30
+        usePreset: true
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        adminKey:
+            - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
+            - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
+            - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
+        privateKey: ENC[AES256_GCM,data:yMPy+rtkOyshYpOpv1dZGTnP9ukHHjEUXFm4ROua1D2650i6Xr1lahN9kRnqePquQjhH,iv:rxAYvxIk9JUuW2GEoNg2PnSUxrZr1Z49+daVEZjN13M=,tag:ejwdNn5fUDgbfSm8YS42Tg==,type:str]
+        publicKey: base64:sp9nI2Fbl6ZX2r0Wy2RcmXkOrfRy3ByCh4K2acwnuHg=
+module_config:
+    externalNotification:
+        alertMessageBuzzer: true
+        enabled: true
+        useI2sAsBuzzer: true
+owner: pork tdeck
+owner_short: PRK7
+# firmware: 2.5.20.4c97351 | state = 23
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZM1RObitUdUYxR0VRZDNP
+            aklhY2txZlhBdllpODJSRjdTNTZzNWUrNEdzCmhnOE1CZ1NRaFFuT0dBa1JSVGNz
+            c3NSaFF4QlJoWGFJaGNxYWkxS05paUEKLS0tIElWd1IvdDJtQ2Q4di8rK3MzaUw0
+            aXJqQXM5RHhzZ0dQQkJwcm5HbllQUlUKVVQXz9SeL+dwN7na8/UGi6pgeEWKvkbR
+            gQYpZENTma2B8ZwQ4GkaCvcxQFLvWJrN+oGT+I8+ji9mOFNGnI54Cg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-02-14T02:20:52Z"
+    mac: ENC[AES256_GCM,data:UoTlhKGfIpmQvJY5xiv0BqdvrvH3Xhls7W95jSMLGVkCeJ+div99YcXTBzTJiOb0qtKQ09CLj3Nf9fOARpX8qr44c+TzJnT4bwPVaU8irySf1JZIyWs3l4PzXf+nle+FDXfZ8UjIpz4MxBE2twsVWZXY5ebUyY7rN3ludkMVA30=,iv:Pas1bHIeuTBRyQoeyJZ3iMxu2bK+lIyD2iY7KvM2Mdo=,tag:sE4v9YLZQdafv9st7ZCFug==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.3
