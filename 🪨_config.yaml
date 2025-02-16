@@ -1,9 +1,9 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:cvIE0Hd3BtbqiIWvux9AU6Nd4v8qWE3iTO0Xm5X1vBVXp+SuNKNp+dDSoxDgNVV254tDSufbJg26VQ==,iv:M9JSrIe1w2wBYja0bZ8l30ii6mzBbom3d02XHDCLiMw=,tag:iRYljOb1mKvYdMzzlL858w==,type:str]
+channel_url: https://meshtastic.org/e/#CgcSAQE6AggNEg0IATgBQARQHmgBwAYB
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:BNhncSsg,iv:gfXYmzTu2KCP/bHsOtHohVPIcYSIgNt7nJ/3f2hYqxw=,tag:7Ekzt4N9ssy0GrhkeuxvLw==,type:int]
+        fixedPin: 552039
         mode: FIXED_PIN
     device:
         disableTripleClick: true
@@ -21,27 +21,7 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:JezG3Sx2/CupyXOYtgszrOesw1xKVvS4MKTslDAr4P3p5fehLHq7BHHeld8899GASDtb,iv:Im8G36bDlGnjzQj+T1kELhRVs558omeJWp9+WMw5XZo=,tag:H56E73n9DVyloMVQv0kiaA==,type:str]
+        privateKey: base64:CN8mYHIAycBG6S3INTKZlhMpcEftaG6rLbQR1SmWk04=
         publicKey: base64:DVGf9sQb2wj5/v0AkkOB+kNgtqJyi7Y8h0bwCHKPf2g=
 owner: pork koishi
 owner_short: "\U0001FAA8"
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHYldRNnFIbmRKKzFYZ2dj
-            ZEtlWHhkS1FUWjNCUTlienk4UVZtV3RLM244CnVMYmtiRXA2d0V1M2R1clM3OEdI
-            aCtrRk5UMHV2dkFnMlBQN25jYUs4TDQKLS0tIFpRU2JjRVpzQWRuc0VzUVp0Q09Q
-            S2MxVUlkYitHazNvYzVzTk13SnZwU3cKQ0vdm7J7d/k+a950yXFzgFK3gYkeWVbB
-            pVq4Q73SSBj3E23D2XKLU3IHXnj9QNdaSo4eU6Ookpql/EQYOcVvLA==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T06:28:04Z"
-    mac: ENC[AES256_GCM,data:dAk7U6YgosYt/pVlMbnTBvBtDizGlgKMNeb+zCpidbMN67pF7nSy4pACWqPaxseB/1jZn5iJ1O3+9mX7SnD6Se+deyfZWUfozguKW5tdM42bBC/ukfYpGXqpBn3nAowDxiK/lpUwsKOc2HnwOyDT736kMZFlFmcj1Cpnl/ncByE=,iv:ga9C2ttahpHGtCwUZlLLKevYvgwHMA21v80nYw47Ebw=,tag:LqYbvHaGHBFiJxTgyBRVKw==,type:str]
-    pgp: []
-    encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.3
