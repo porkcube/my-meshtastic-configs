@@ -1,9 +1,9 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:DfC4EAQUPeV2bFkjszoXzccAGOlx6IlkmWNH0BLjpTgZ0RFbXvvFwEzux0ySUdQlynNFbq8kgv7Ln5d6VQ==,iv:w1y9kzJt3TT/NYgbExUxiANtJBIsupkukgEKN8sWJ6s=,tag:k10yatW73rwmcFGndt+bGw==,type:str]
+channel_url: ENC[AES256_GCM,data:b2esdZI8MTr4PTy2WCXaE6I0tmhv/LlMV1u5XttNHn7lWmUEQgvYy7BdVRVhBsttxB/CvggzkC2EjtMFDQ==,iv:85jZE53skfMCEtIUiS3iCz87WekYncaLd9TU6t81XVs=,tag:jsNxZAuv+KGmEy2hfBJjFA==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:Y+uZOigw,iv:q08oeOrBg+MtDMxAFbRJ6H2uvUMOGO2SSvmyYu/MWAM=,tag:xRAnCIWobIamYXPl7TFatg==,type:int]
+        fixedPin: ENC[AES256_GCM,data:Gn0w4nFN,iv:XrS9CEkL7Y9Y6dYoKgSvjsXv3ZW2JXm9Y+OcHIZBXQA=,tag:Ubfl3N8lHCmixgqeOE0nNQ==,type:int]
         mode: FIXED_PIN
     device:
         buttonGpio: 31
@@ -15,22 +15,28 @@ config:
         screenOnSecs: 60
         units: IMPERIAL
     lora:
+        hopLimit: 5
         ignoreMqtt: true
         region: US
     position:
         fixedPosition: true
         gpsMode: NOT_PRESENT
+        positionFlags: 41
     security:
         adminKey:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:z2vlstb19fM0yBJ+7nwt86E32cK28PB6N16Gf5rIeDa1hFuGEFK4Bv+BF5mw1W6rFV8y,iv:oKduPR5KUMxz0LNZUSnauZ8hidcXBQSR7srMabdR5aE=,tag:oaODEI+S8JXlu/oBb2hZ5g==,type:str]
+        privateKey: ENC[AES256_GCM,data:bZCQjWR1aK2BWIy1G3H5cTGMz9vAdzUZiar2YfRv452hQccOXnXv/Uh6VNRRw02Zt1j5,iv:+8uqUfzNBOHH400PgZCptjwphuIeG8gG+uRSb7iw5j0=,tag:vzDXh/XX6IbfbnD14hp6Eg==,type:str]
         publicKey: base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
 location:
     lat: 40.71
     lon: -73.9515
-module_config: null
+module_config:
+    telemetry:
+        environmentDisplayFahrenheit: true
+        environmentMeasurementEnabled: true
+        environmentScreenEnabled: true
 owner: pork d446
 owner_short: PRK1
 sops:
@@ -42,14 +48,14 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVY0lJUnkvc2N5UVVoYUtk
-            MHdqWm5wYWdoUEg3TlJTQUplaXlaaVRJeFIwCmNxcDhzR3RyY20zUExUWk9yRVZN
-            bE9qRk9pVXNRcmRZL0tUYnFkdm1wcU0KLS0tIDluNzdlRFBQYTh5TG1zNWhIQXBk
-            b2xNbFpKbnlGQW01TUNya1laMEk0c3cKJ6s/IVhl7Wnx9wj0k4QdNgTItiCveWaS
-            C5RcEFsTk7V6JsKuA9cUq4IYjJFx9LeX5VYG0nE6Z317x2o0n8J7/Q==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzZ04wZmRPRW1Oa3V1cXow
+            bDFwR0RhWDBCZ0JPZHBPMWFoaGVrbXBralRRCld2NGp0QjErWjU1M2RRbmtoN1Jl
+            MVowVmcwR2pyMWZFQzRBTWNBUE5SNjgKLS0tIEtBZGN2RHNiajBMSVQzSXY3OEYv
+            UkZyVmRRc2M4L2RwYjZqWHBFMXVxcWsKLUANXP2J7c+qfzxgqXsNGhLq8PdmKC0J
+            l2xPZfeXi/zTbOlV2nxUiRhN0UftGvAhlm0GmurTgXA0E+o/wcLd1A==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T06:26:01Z"
-    mac: ENC[AES256_GCM,data:574cdoggyS7chN6jD2a42h8Zu/XU6x/NtK8Z38bl0XDLfLg4oyua9FLvzy7kjY+tHHCw4Q6eaXwCIqX39h2bYAsCYjnsIa/igcUY6fm6MAdsFTxjaH2P1XeOClu6rBKstV3IBXaLnRfKMO0CzF7TW2FZFgZkcTZ7AIUGZW4KGWw=,iv:gJM1lRlRHrAX41IlIz0w/EjZR33c2gh4vRwhK77XIx4=,tag:oMn+dE3AEccqywCBM27dxg==,type:str]
+    lastmodified: "2025-02-20T04:13:09Z"
+    mac: ENC[AES256_GCM,data:XLHMISPA/+XJ59jEMhrjxf9I6yKo+wjHFNgcHA9fC6inYFwpbVuOcZoIatYuo6KpoMCS+s15rmRe6dDN031P0B8DnVdA2CHQrg5c2YwCtMgA8HVw8mKKKzugbLQAjcIMm77XkN2PdifTKSEVMOCORanIIyb4LCiAzjmZd2FeEuU=,iv:NMcErAcpow0Bl4nnitQ1EuoCTNIDD75IqMMaBxUEdFY=,tag:cOceru+H/2Pulmem7EIlSw==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3
