@@ -1,8 +1,7 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:nAaukz08U1qyi8O38S/35ZmeODGYA/Uw2/ndSySkoRSc0eL++ofmk4DfWvt5lr8u+I61ZaTN,iv:ZYSS1duvOJi65FeXSFqdd1rMwm2PUZYt/+W+rzEqry0=,tag:fXnAMvCO/tUNjHjp1mx9Hg==,type:str]
+channel_url: ENC[AES256_GCM,data:0flwRq5Ir0I76bBHNmHOSOQQXXQbhjZC5wu63gCSmOBZRPb3SZZxecjTDVKGhhWm1jpQJO+a,iv:Ipx/hn6JbR8bMSnKSYoS0l+jo+gyFqWqZEkEtmjB7Gk=,tag:1MzRgoSLbtlpE/PfzrfAIQ==,type:str]
 config:
     device:
-        nodeInfoBroadcastSecs: 10800
         role: CLIENT_MUTE
         tzdef: EST5EDT,M3.2.0,M11.1.0
     display:
@@ -20,7 +19,7 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:AFc+CSMNtz3gnKqS3FaiROSruVKPX+mogHaLKdQHxm3vCv6dd9MM2Q2JTIOSpR1OZPP5,iv:DTHbGszD+xzHSBm7sisBiV29UoaSUaTs6ZEyOvPboYg=,tag:l/cANSkLWVF0ncIMeK3kvQ==,type:str]
+        privateKey: ENC[AES256_GCM,data:p30eq9rqwUla1P2gFVKw7kQOBbraIt5Lp4ry9Um36Km9Pwe0O0wLppduhedC/VDRHNUq,iv:xf3NcOaXfC7gfW1ckKFtBDveeAkwyYrY8+KCGmbmtb4=,tag:uGPiqOGR0lE1EasqPWqejg==,type:str]
         publicKey: base64:sp9nI2Fbl6ZX2r0Wy2RcmXkOrfRy3ByCh4K2acwnuHg=
 module_config:
     externalNotification:
@@ -39,14 +38,14 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxTGlST2JDZ0dPZkNFQXU1
-            c2hpK1U5Ylp6bTU0Umd6V29RVm45aXVWVG5RCnN6Q040RjAzd0orcXF6MDhXZm9p
-            T0habDB2NWd3RWx4bUx5WXVEOXg0U1UKLS0tIG0xby8yZFdpazJlY241dGxsRk54
-            SVJDQ29PcFc3NjVpUFI1SjNHaXhPTzAKRZmKgbQLGHP5uhFDjIZFscvuBANfApTz
-            TktEPHAp+FPtdSH9gYHdWV0fkKwe+3DqweslGI2NMyr9Mf7EC8aJjA==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNbW93K1FnUFZFRllvZndI
+            aDJuZUZpVFRoY0Q3cXpmOEFUWHRoaTEydEFBClNYOFZPTGJSRjdnNHVFUzNxQzhL
+            aUhEZzJTZW5yYVIxVnlVUnNmVVkrTEkKLS0tIGUxbTlISEFJbE0xMUFMQlJON1dX
+            dnJhZ2xIRTlTWEdPY0piVzVnWHpZOEEKOx7+55+YlOoV5E/UzXiwV/lnjKNhoTyJ
+            0ic8sF8XUT1uauxeYuKRNZwHnTveG00BNk0K+DotKeuwbBBgFFzEfA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-02-26T22:54:19Z"
-    mac: ENC[AES256_GCM,data:gX4O8v2q3hbea6UaQx38PQHlMTIzqnucl0C4IlmrwsBukbPgWeEorzQCLlDEdFKrLOiYATHpo1gcshMjiVkpblePtXAdKdd0qYL8163TLCK7AUElFCWPT43NgO5IIHs9sXzgvx0p8B9DiajYCyxQfGOACy4dItK52aKZuubk+Po=,iv:RdXdXSKiCfaDoHu0ThPfa4PK6VkhmMqclIzA75DzGmE=,tag:wtpUxwCFKLnF2HXH1etUrw==,type:str]
+    lastmodified: "2025-02-27T04:41:27Z"
+    mac: ENC[AES256_GCM,data:Fu1Hm8HIp6y0K2idn1+mPNBeTP2BS/7Ujw2tu+zgt0LIJWQZJ1G9MF97FOYtpA4Vx9fztNnj1fuO61WMTZb59q7jRscVyVFcTAeBI3sbXaRpigVghiurcx55aXUSUdsFu1gzFQxYOv4ef+eOpDLnnkRnG8L3nmH0gIRFNJ4/I68=,iv:SG2kejTXUJxOu1/3pqtI38vb5ZeUnBpCiNtmZWGhRoQ=,tag:aaoXp+HRJMapouvf54S48g==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3
