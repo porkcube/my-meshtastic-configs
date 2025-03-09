@@ -1,14 +1,13 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:Xo95Nxg2AaRd+ONzc2NAr8emy0kk+VZsLZkeyhhZwwY2agmNjY8EG0yf3R6vC1VZfcC6m28xmYcjYAcu4g==,iv:PGMVaGfj/0kH0bOA4uHzdJ1xsqfRTPgOQPw45whZYys=,tag:0p2BiDtZHrP2CzxPRylGlg==,type:str]
+channel_url: ENC[AES256_GCM,data:8d1T6XSuzqZchG8BH6qXks0TnKihcklR56xpSVa6pZUF6rFqiM9bC6iaXDgeW6YW1O1cmtKTVyVCgQ==,iv:/AE+huNhYWpp7ext8c9EeEe1hAxj8Jt+a1dPgcKAQts=,tag:4fO9EJRGfFJ+cfdvHOUGVg==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:X5wrLDBE,iv:1dgwM2tmLaE7EM/LuPH9ta0QNzVG0QbFKxbHqVlVhRc=,tag:lX3aQs4PKUP1avvl2V3dKw==,type:int]
+        fixedPin: ENC[AES256_GCM,data:T9lc9xTL,iv:LvHAcZkeVu2UBr9SdKAI12qTCHgcukVdgDQ99LE677E=,tag:eY58pAKWMXoS5hkyeeZ5Qg==,type:int]
         mode: FIXED_PIN
     device:
         disableTripleClick: true
         role: CLIENT_MUTE
-        tzdef: EST5EDT,M3.2.0,M11.1.0
     lora:
         hopLimit: 4
         ignoreMqtt: true
@@ -20,10 +19,11 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:H7OVjnW0MIrXXPrXZLxaNqUikAmkS0JsJ+ET94dOqy3pvLy/sfU/OYrzL4FJX+fYCdv9,iv:nquEHZRWBMf+HaO1EXqpdpuWlRktQq8NPsKvYmb1olo=,tag:n8Ck5EOtAQJ4QInypBd5KQ==,type:str]
+        privateKey: ENC[AES256_GCM,data:Q161YmBmU+kMtJ9HdGzrTPJN3KVYVaMUhT2pWRCWPdtIqa3spR5hM3xN+b68SaDGXG8Y,iv:NC9vnd0VEXVksYgAQWd13TyNnr4yqYItKVYSge8u48M=,tag:zMYnW/ZeVP+GtEtHCygTvw==,type:str]
         publicKey: base64:kMZ/VS+k4nNxhMDc7X9crngOoCVfHAUsA8Q9stQqcXs=
 owner: pork xiao-esp32s3
 owner_short: PRK6
+# firmware: 2.6.0.f7afa9a | state = 24
 sops:
     kms: []
     gcp_kms: []
@@ -33,14 +33,14 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCbEZFcU9jT3pFaWVLRHpP
-            UlNjQVY0QmM2MFAza3VuSVExRkw3cVFRbVR3CmU3ZWtDT0xLc05uaE1LdXRmbzZW
-            NEhJdk5kcDRSejk0WnVOQUJDTk9sY3cKLS0tIHloWktSYWZBbmwwRHVaelJHa3JO
-            aHlrYitqY21VS3hXQkt5NkhDMTdoUFEKS1TqJm8Z1gyIQrBjxdEb1Tx73kN+4lwY
-            nFphdL4X56UF9CeR8mbpuv6zQMfHnZf+hyUF+W0AYpFr+pay6yZ6/A==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDS3JxSC8xc01LKzdpays5
+            V3lNcURobzUzNk9GZG1wMWdiazlNNUJtM3pZCmtwT0pYY1VuaElRZEpzQmNUWFhO
+            L1NLL1o2blcyTnJSTlFiWCt6NEdFaFkKLS0tIDlWUVFUYm1ySVNYd2YyUVNFMkly
+            MHp6cUpKc0NEVjRvOXFiZXkxNDloNUkK0hFnW5Ek6/L9rPoroHwAzYr1gcw1XO1Z
+            FCNGRmuFqQAPovOvSb8l5XdVTtbcYA/GdlFPy6wio4ck8MxoywzqRA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-01-23T06:27:07Z"
-    mac: ENC[AES256_GCM,data:KlEq9OSmMT92n7XUFJ0m5TYaEFP+cllEDTDT7uTGbCom9usamS2Bc+w86ZVp1IEUgKIC7/mKxTrDIm3QGUsxEu0guxaZs2F3lhGYXiCj6tunUzl7mj3CRIve0zi9tplPl+ab2AARrS6CcYLIIvGn9E3qLtR4+NpJVjCE+0jie1M=,iv:4sDwPJE4wIfU+s2Ezbsd3Y/mvLQairbAIk1hwX1+VhE=,tag:AnPCKEALgQZ7e5vVsXyVlw==,type:str]
+    lastmodified: "2025-03-08T18:10:36Z"
+    mac: ENC[AES256_GCM,data:8a6twHC0L2B42JZwEZIzotl0+rQkUzfhG9IYOrUpW6zu1wkhg5F/9hqpFziWzMUjkbPN2t5P4eL2/K1mtcNpbLUN5GcAHat/fOHHLTw1pEp0j+uNiEDFP9U4r55DAh3d3MYquM+PmT+azNuxqvOfXA8Fl/J++WNkxDVc5xvXCAU=,iv:QRnzQfOuMx8kyy52XeyDB7waXq8J5smUDLzHGQelTnA=,tag:vF2w+GMKxiYbRYS2OOEUbA==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.9.3
