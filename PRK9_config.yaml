@@ -2,12 +2,13 @@
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:WGiv86+I,iv:qbgKOl8a4VXl8SSKDcwe6ACpOex8ip2RxDHOqrnGHa8=,tag:QFrCaLCKCt22FQO2KWzNug==,type:int]
+        fixedPin: ENC[AES256_GCM,data:pzPcaGd0,iv:xbwIOJvqChq2WgJ+D4mzbs35rF8ZGpQBJzdnEWWSwSM=,tag:gFetD9H0IUdDjYTuwxc75Q==,type:int]
         mode: FIXED_PIN
     device:
-        role: CLIENT_MUTE
+        role: CLIENT
         tzdef: EST5EDT,M3.2.0,M11.1.0
     lora:
+        ignoreMqtt: true
         hopLimit: 4
         region: US
         txEnabled: false
@@ -18,7 +19,7 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:wqzJL9JHvRAWjLHKrx1Ecp0A6IidgJpztTCCzxZ+QLGxaNXgGe4oFu0ABVehvMJnvIIc,iv:71JP/xSkHOCUcSxWjW59GyHol2ltQ4/0ZKh7B3aq5Zw=,tag:Oa3MIY6mzIFQBnCC2rcvBw==,type:str]
+        privateKey: ENC[AES256_GCM,data:TZc0fe3HzrxQpCkmY0UQ+u61ay2To3Hqn7jrkTQzbwLYbAz7QHhpbthAq/yoafij4CH8,iv:j3QaM4ZyN1CXIm6kE+5JZ8XQks6MOdHfe1ewpTFWFiw=,tag:o38Yb2XYqwsQ+oRk2GyFiw==,type:str]
         publicKey: base64:77X3Tnk2u9QHdVUzNVeVdw5QO9E7qv7+v1ikFkkJrjo=
 module_config:
     telemetry:
@@ -36,14 +37,14 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4TnhCeUFYamxwVjJaVTd6
-            YlJaT3cra2ZmWjVZRWhYL2JuUjIxeE9Xcmc4CjJZM3ZyN1YvWGtkVWQ0MnBpWW9Y
-            WUNTUDh0RXF5SUdGS0R4eUptR1hnUGsKLS0tIGo1QWxTVlhOZ1RRNExQc2hzZTYx
-            OXhKQS9zbFV4UitFZzQzZ2VoUktHaVUKuLCWgHAbrJ3qvD24m0CosKeopvnSQvZ0
-            idaMBpaIS1M3VizVHXj9PXPLlHmgNZW0JAe/ZsBgvOBYENqqiMNN8A==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNVXVpcUxyS3ltcFJ1TTBJ
+            bVR0R3c5SDlUWGJHUlJVYXV2bnVzZjNWVW0wCnQxWEhYWVJKZjdwQUpXdzZZTDJS
+            RDNKTkdVSHIwY0RnaWNEYkg3VDlibmcKLS0tIGxXRWdFcklVZTlEYnZSbkFKV3JY
+            Zk1BdmxWd2QzTDg3MlBabkxUKzNmMEEKs+b8jI5cIwA30l6dC+zQdy+l35qFeeA8
+            p29iPnGcruyVzg2YpLu8G98lld6uMFIf5vtnDom7BlJ0hIN47HpYOA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-08T05:33:19Z"
-    mac: ENC[AES256_GCM,data:W3mWCRXmCNu1ry/oWhnOZs4bHeBc/2aMLpdz/bR8OzXJaxA5Q/uV/QcAEGI9ZgCb9DTJw7NrKB7T4AUAkdAk5wWWQBmxegqIq0IskQJsUhCtqMWMsZJkQMsEGbHeFWJ94z5C62svMyk0pRrP2AZg0y0b4h79dJz7e8F3Xek7nGY=,iv:d1tXIWYzftDEs4huUHRaaEirydmULFI+dV7736k8hhg=,tag:UUMw5n9Zab53qwskS83/AQ==,type:str]
+    lastmodified: "2025-03-13T13:24:19Z"
+    mac: ENC[AES256_GCM,data:SVDTFKpeoHB/kx58t/odmLuMKs/MPfdO5FNuDtRvXqm6gI32BnkxOlgNFzq1ZaPQ/PZ9QWHim7sbc6Y0brCMBsSpqgA4/nztnkETUjmL0pSh53uN35Sl5uDFhYZ3QuM4AbwxjGBPbIm8uLDoHpaX5VbkBwmSTqp5oxKu3JtHI4Q=,iv:7UxwNgfi5s/2nchuRO1GqeHSNgoLvv2M9gfPtvvYVCY=,tag:w96ZCkcessmwTWzYCRy6jQ==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.3
+    version: 3.9.4
