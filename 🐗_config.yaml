@@ -1,20 +1,20 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:Vku+wH2DTkj92E2oLWSzX2cjTsqgFaYKtahmWnVCHoN5f9+69qp1lalKYD3H5v2/B22UVUSN,iv:5Q+8UfwibOptLVYYTIDNTmKQxF2MfzVNEdVjcXfBwpM=,tag:tZrpL3ydmIFNyNFZddRxtQ==,type:str]
+channel_url: ENC[AES256_GCM,data:V3FkCse9v46axQvakK9LekO9Wn617WPsc8sdX6HsGJslL2DmPYB9cbiH699gWjXWaG/lfGF55tP2UFvQ4Q==,iv:3PUq/xp+3UncVJSIsY0JOD25Ck1wcLChe/MezUkx2/4=,tag:sdTbbGc/KdH1OKhSAKZRSA==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:MtHG9eLV,iv:3joexrQNbd7D6TOrFrHQxbkgNGBh1Uu/5OWjJWnZVuk=,tag:DbwfJ8Aaa5mfQcdmdEwBGQ==,type:int]
+        fixedPin: ENC[AES256_GCM,data:AviQ4Do0,iv:6IGeEjUwhe5WIJxeSKucLQ2HL+d3pCrWbO2vnadqqPM=,tag:Wpq3zNmKNOmXzy5K2ip5KQ==,type:int]
         mode: FIXED_PIN
     device:
-        disableTripleClick: true
         ledHeartbeatDisabled: true
         role: CLIENT_MUTE
         tzdef: EST5EDT,M3.2.0,M11.1.0
+    display:
+        screenOnSecs: 30
     lora:
-        hopLimit: 3
+        hopLimit: 5
         ignoreMqtt: true
         region: US
-        txEnabled: false
     position:
         gpsMode: NOT_PRESENT
     security:
@@ -22,10 +22,11 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:Hm+wHCcBhIolswQPuB6/30vt/VzjejK5cAF+yQMRYrQ3ovYOcw7xpSZh9LHNFDB880EP,iv:5GfsiS7xoJgHO/ISlUXbIxnxOpNdEKMwH/Y26yigqmw=,tag:2qGn3LwESSTtmYCHOf7KCA==,type:str]
+        privateKey: ENC[AES256_GCM,data:3Jn6HfuSxibLwVU4w5iIDUsOksc39w2VppLfhg3xQXS8IiYnIGoYPSiUQ7jmoW8VrPD/,iv:JIXtBCXdIKJhDXkBIOWwlY9NilbNOTSGpAalI4lfNqo=,tag:tgjQVEXax4TDoTN0cQIpMQ==,type:str]
         publicKey: base64:EsYn63PDKPZPp3jJVpN5FohrME6SIG0nZHVe0IU95Xo=
 owner: pork boar-d1
 owner_short: "\U0001F417"
+# firmware: 2.5.22.d1fa27d | state = 23
 sops:
     kms: []
     gcp_kms: []
@@ -35,14 +36,14 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4RmtNVWRweUt1WEdDZEpH
-            WmlTRUdHRC9jMGFEd01pbnU5UlhRSlk5UWlBCkZ2U0dsbklYZEU4K0dHVmRuSDFX
-            Ry9hcmNhRHE2WFRGZUlBTjJWdXNUWG8KLS0tIFg0dlltWE4vek9leHM5R2pRS0o5
-            eUY0QjNGQnVxZUsvcWIvVjhJUkZVMGMKkfpIDlxJUUtpTFq0F2fWaZIBfQfhtJXS
-            SwDmhlzC09EDRurQj8T28Vkqpq/lIKd3er0dzweQ8Vwg35tRYd8oZg==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTanZ0ME9BcWZuMWRnWXMr
+            eWZHUnJIVHBsU3diSGlqZ0R6V05lZ0dMMW40CndJdzVEWTZYUTYzRlRnRmxRQlZ6
+            WG5KYm1GZ0dZNGVxYTl6bVVDdENlTTQKLS0tIGRvTFo1V1VEQStOdGdGdjIrVXlW
+            OWFVcFJsb0hneTg0b0R5b0VIcmk4UjgKn+fi8mPPR8hASh/5u9/WvTLe9mmIP258
+            06qCocvjkPsTFENbZFllviPFMUOqae9iC6CjaYQuF0X2P0YE4VU5eg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-02-21T04:15:35Z"
-    mac: ENC[AES256_GCM,data:YEqclIFGZagUSSJ03lB7XzjobeQUflO2QGTmqXaQ9Of2wltHxfkRq+7RiXJsQzvc2pU5bdZ8mrlszTlrZ9R1fO/BhIZmkX6tlg4lmrqU93dqMAUSJCzFrPTA7Umr1rDxa7zT9fLpVS12isPjASl+QX9qCvfyO/CSWT+FeCeGdB8=,iv:H6Y+YCdLQGCqsDJDbZnM2CYgZTy43uNzjWyvJAsN0ks=,tag:W1fe7SndNv+dZp2LFfDvsA==,type:str]
+    lastmodified: "2025-03-22T19:42:24Z"
+    mac: ENC[AES256_GCM,data:/26VTjIonqkLBUHGmEtpOfGdC+07zt5jg4MZ1Gj3zp3llnunQGZaefma7a3mRKV8Tvxsx6K1/Yi5j0Q/OQSI4bSNYvlY1kmAIpnX4ygWr3LW75NHXgDrzjNEnT1ArUfKxQ+ZdmxBzMRmJD5e5+h1T6ci1Pcf2CF8yFJZfAinm34=,iv:qva9sfqdrtUztqmYoiRaRrM2C5hpQmhktVkHVdZvC+s=,tag:0bY68Q+zQJoF7Ogy5t5RYA==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.3
+    version: 3.9.4
