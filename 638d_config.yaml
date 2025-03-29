@@ -1,0 +1,41 @@
+# start of Meshtastic configure yaml
+config:
+    device:
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 5
+        ignoreMqtt: true
+        region: US
+        txPower: 15
+    position:
+        fixedPosition: true
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:4XtFQELWoMhjN6BKI+LExoVRoikpZSmrKWT1V3xgSj2e/j5BkR+sy5TL2KxVextOimqp,iv:W79t2NQfjpLmUgV8NBRhC7L9qONf9AaJ92OwS7LUkic=,tag:aHkesIqOc0Va5x96hq8r4A==,type:str]
+        publicKey: base64:p7Ic+O0Noh/X6pk03ZvCxkakFEE0QE/hiI2KfXTMPUs=
+location:
+    lat: 40.71
+    lon: -73.9515
+owner: pork - pihat3B
+owner_short: 638d
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXcFpzczNqUGMxN1hlaFlO
+            Ny9SanlROStjR0ZYdm05eVZ0a0ZuRjRRaFNvClIydkwxZTdDNkR6WU5nNUVtbzZt
+            Ymw0RXl0cnFWQ3dsVVVobGsybEhEQkEKLS0tIHlQcERlK1BFeUVCdTU0NUQvaEov
+            SVJyU0dreFhjVVVrd2t3NWNUTDlaM1kKVh+jEazOnNk2O0ln7rmSl+JOmwWGYF3f
+            8KkAxQrO4vcmKaV0nOX4IY3kroVl8kGJrckV+wFV+Dh0e6Y7WKDZTQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-03-29T04:10:33Z"
+    mac: ENC[AES256_GCM,data:S2cAE8r4pY/DITiH9i2veXYmgB+XWLMxwQcKwiZINq6fLUHf6zC5scNmu9LzMX+1TJzDaonF4XtTXk+OXzDTo3Bbw2f8DBOM3kGQcJLeqMU9KSj18EVE8lapHoBpInC5NM8LeSInE9Zf/ZHPb+WYIP+l61aLgvcPWaqL2NkUBoE=,iv:tG7RLbcRTTIV39eooeX9wWTXmASeSWWzxKYPaYihOq4=,tag:ahgVvWE7iKsiCeFVqHrrsg==,type:str]
+    pgp: []
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.9.4
