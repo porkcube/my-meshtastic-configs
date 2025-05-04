@@ -1,0 +1,45 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:IV22Awd8,iv:3tmnoRxl7cHSJ2ABI1gY2dzHKixmLc27Z43iLi266AM=,tag:UICYYsmMRFYkXXh5LOfM3A==,type:int]
+        mode: FIXED_PIN
+    device:
+        disableTripleClick: true
+        nodeInfoBroadcastSecs: 10800
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        ignoreMqtt: true
+        region: US
+        sx126xRxBoostedGain: true
+        txPower: 22
+    position:
+        fixedPosition: true
+        gpsMode: NOT_PRESENT
+    security:
+        adminKey:
+            - base64:a4G5cY5oxpNueGSajNKmDzRacraL23VgTvBiHw2e/iY=
+            - base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
+            - base64:StWJrm5nTQXebsJGILTQPOy/nMjc+Eay7MyRQIw3WTU=
+        privateKey: ENC[AES256_GCM,data:K0h3OzSaUjMEFnZuMTTKIJbLKwGo/ZjgwGM9aIjWb2Cd/l8nj3Q7b4WED9VrmEizQnQS,iv:arVcWkNnRz6pm1b7jO8FO+i70rgGeC+WpbNrHpXQOjU=,tag:q2Lg5PvbMYr64fRbl3w1GQ==,type:str]
+#location:
+#    lat: 40.71
+#    lon: -73.9515
+owner: IndustryCity 81b5
+owner_short: 81b5
+# firmware: 2.6.5.a93d779e | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSd1dmd1FlaElXKzExbXJN
+            ZlZSMEJpbExHRzNYblFYa2xKNFIvWldncVdvCkt3UzNUVHVHRUZmWW5iRWRtVlpM
+            a3R4UjhsUXMvMDdvbEt1aTVhc2JqdTQKLS0tIEJWZHdVcWpsV3NNUjZsVkZSQ3Rv
+            YldQTzk1QUh6Zy9PQ3VaRmNwa2ZJV1EKEYw55KUP/nkSAmJPHLiCIK3pr6xohbCI
+            AauUqpY+zlrfy8UEJW0wkd7rqkb3Fcor9b+Ak5gijY6cjfKUWJphUA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-05-02T00:03:44Z"
+    mac: ENC[AES256_GCM,data:tQrrBKpOlzSeAUOLUizoEbjNnoLhuYaiH745Yy0idY8ppxcZr3BeehYDlkUOnOvqwsTNgUob8GV9LdPTOUpaCV+tq2ujm2xLOY33d89soMBvG1rhmWlG50f3hq3zbYcBrDYghosKgk5jsWNzD99Aicpj0yXzcwB2NlYm3vpm6yk=,iv:+Iohrbdy3hHTHOwALzp8k9U5TAgmhd8XZel4o0J8dfw=,tag:bj/CnmzvW8sSTQmzD3yC1A==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2

@@ -1,0 +1,21 @@
+# start of Meshtastic configure yaml
+config:
+  bluetooth:
+    enabled: true
+    fixedPin: 552039
+    mode: FIXED_PIN
+  device:
+    nodeInfoBroadcastSecs: 10800
+    role: CLIENT_MUTE
+    tzdef: EST5EDT,M3.2.0,M11.1.0
+  lora:
+    hopLimit: 5
+    ignoreMqtt: true
+    region: US
+  position:
+    gpsMode: NOT_PRESENT
+  security:
+    privateKey: base64:0MBLBXww75XvTpPQOtb6p1tXtT3ZUuY1MTeZ8xgk7lo=
+    publicKey: base64:StWJrm5nTQXebsJGILTQPOy/nMjc+Eay7MyRQIw3WTU=
+owner: Meshtastic e8be
+owner_short: e8be

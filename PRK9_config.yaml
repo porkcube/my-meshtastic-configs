@@ -1,24 +1,27 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:JkVABhi7+1LTciTWRTWl6U3OBovmXyxusyFtO+MzMmpSD/JOsjsXoJCuZcj+eHv32mdt1hwUjrB55J5Q3g==,iv:bhk6YVI+H5I8g0YSdPwbwz+8h1z7kWu3dh0/TozkL5c=,tag:A+C+l351du0QGNWti6qMEg==,type:str]
+channel_url: ENC[AES256_GCM,data:T1n5mcXd/OLRlgDP+NhXjEQMAOomLsSkR3kTFy5XY++fE+RbRZChg+/4yN/byUSA647YilfVv0lUnQ==,iv:ME99C+0Yz+hogkVExE9lkmwmrLDKofnVSQAddHZccCo=,tag:9uXE1oJCF0DemmyWCv66qg==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:vv8/d+L+,iv:iM0CwqxIofxAbR7VCZJsaSCwvYoiuNVrYdCOQG8f8TQ=,tag:+pEkKwM4D/87ww3PxPVNSw==,type:int]
+        fixedPin: ENC[AES256_GCM,data:IV22Awd8,iv:3tmnoRxl7cHSJ2ABI1gY2dzHKixmLc27Z43iLi266AM=,tag:UICYYsmMRFYkXXh5LOfM3A==,type:int]
         mode: FIXED_PIN
     device:
+        disableTripleClick: true
         tzdef: EST5EDT,M3.2.0,M11.1.0
     lora:
-        hopLimit: 5
+        hopLimit: 4
         ignoreMqtt: true
         region: US
+        txPower: 20
     position:
+        fixedPosition: true
         gpsMode: NOT_PRESENT
     security:
         adminKey:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:eiTap2djl+xe1n1xjXI/0RVYOrasRYnrP5PjaqSxkGqZ+EJeIO3QTUkjd3/IV+EhCpw+,iv:BYfOhUuRgqxFVGOCYWS2lNJikGqGFL6+/JKx8oyMcRk=,tag:/rOGiCLDwO3Y53IdirE/ww==,type:str]
+        privateKey: ENC[AES256_GCM,data:gP7i80nLcbcIpVbUFPgAS0KsOM7PDq7dHIeEi/QvfQVU8EFrotwaPYL1dFo5pxzyJI5e,iv:0x3ST5CmT7Opns6buqFkCG/2db2ry8i9GDcS7DhOTQY=,tag:1XslTH/RdjdfrU5wCjB6gA==,type:str]
         publicKey: base64:77X3Tnk2u9QHdVUzNVeVdw5QO9E7qv7+v1ikFkkJrjo=
 location:
     lat: 40.71
@@ -29,24 +32,19 @@ module_config:
         powerUpdateInterval: 1800
 owner: pork ikokananov3
 owner_short: PRK9
-# firmware: 2.6.0.5c8f1fb4 | state = 24
+# firmware: 2.6.5.a93d779e | state = 24
 sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4ckdZVjk5Wm5pSXBGY09D
-            Y0wxWHR6S1BKekZPODJiUVBlUXVOQ09VR0hVCnRUc1k1SnAwaFNDa1R1SHRKMVp3
-            bWRJcWR2WFdiQlNIUWpDQjVEeHRJMXcKLS0tIEI1Z2VrZUVUYmhmQk9GSTFYcmty
-            WXNYNnpxdmdPQmRyUHhkaEFGbXh2amMKLdCaBp4hN/KiNyyzXncQVw5vtmEVVqYK
-            sJxR3M1uleBSsFcUsU7btp0co5Qblm+blCdbuWB1zHHNBAHfgTMZew==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSd1dmd1FlaElXKzExbXJN
+            ZlZSMEJpbExHRzNYblFYa2xKNFIvWldncVdvCkt3UzNUVHVHRUZmWW5iRWRtVlpM
+            a3R4UjhsUXMvMDdvbEt1aTVhc2JqdTQKLS0tIEJWZHdVcWpsV3NNUjZsVkZSQ3Rv
+            YldQTzk1QUh6Zy9PQ3VaRmNwa2ZJV1EKEYw55KUP/nkSAmJPHLiCIK3pr6xohbCI
+            AauUqpY+zlrfy8UEJW0wkd7rqkb3Fcor9b+Ak5gijY6cjfKUWJphUA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-15T23:07:48Z"
-    mac: ENC[AES256_GCM,data:BDMlJ9TQNq2fvQCLD2ru9DPguzd7d7g6XvRLRiVf4slmSruED/iEzK5biE7TLvZDAFkYYyGo2ehjorZEDozZaW8UrjMRd/NDZO5vbW2JCTjLyfAgWqRO3y85QA1MLWXHP8ofZo82JfxEzSJhqgTD404lMKyGYYUX3fB6ZLZs7aE=,iv:7Xx2HbOZDYRsg2NGbTwioIGwKun3KiMHq0+9U0VcQOs=,tag:opimHB903JIuB6OHzl42Iw==,type:str]
-    pgp: []
+    lastmodified: "2025-05-04T18:12:19Z"
+    mac: ENC[AES256_GCM,data:IzfGmeiAhiItN/urGl/riPFwdOzPVSWf4VXvLBggfK7jP4fmKYdcNQ6XWZJre6r/kS/zmYsp48Yb8AEDmamx4SIuIYRLWU9+XUa+dT+9umuZh94oetcwGqvZwIZAcnE3SrRgf5Mn69q+0PXU2Mp54Jiv3lU8WhU21RF2OvDkBTk=,iv:e1oIux7fGBNRZFG+Bh3z1y9u9tZapYqi9uvCgksp8l8=,tag:p6SLgZxKgNdtDWHI6Bn/kQ==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.4
+    version: 3.10.2

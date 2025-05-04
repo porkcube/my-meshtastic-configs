@@ -1,9 +1,8 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:N3OhzzcU4RGuVPlYTxgolaFzuacDarxQhExv/olSelN7wOQ1zZjk2/1FVeiLOrOtOFgD+m57,iv:M/j3nESMfmagDTn4VWSXXpuoq7hr0JAwkOIKcKZmAaQ=,tag:OeqydMva3NbsnFhE7pgOGg==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:fyiUy8GA,iv:NxUd1B/e07dUROnbhLIUQS1Lml3AlnctkD2NPr9M9WY=,tag:7wIECmCOBwBDK/zj9FBg+g==,type:int]
+        fixedPin: ENC[AES256_GCM,data:fO87dy7C,iv:tXN2V40HysWIKC2GcKXROLkqdUj3dLy5UNzMhU9l8nk=,tag:Xa72AGV9BXdbvtlxlySOAA==,type:int]
         mode: FIXED_PIN
     device:
         buzzerGpio: 25
@@ -19,7 +18,6 @@ config:
         broadcastSmartMinimumDistance: 100
         broadcastSmartMinimumIntervalSecs: 30
         gpsEnGpio: 43
-        gpsMode: ENABLED
         gpsUpdateInterval: 120
         positionBroadcastSecs: 900
         positionBroadcastSmartEnabled: true
@@ -29,10 +27,17 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:3YkdKf5sJjzdf6PH0dScpCLpXxe5evTAtTMXeHsbCDk2u0ysu1jkXKf+E/Goxn85DnRc,iv:qq+9Mw8Piv8w4oS/e8OH07UBfydMfXqungNGWbhmNjY=,tag:cEJss5PBdkq92zglJnximQ==,type:str]
+        privateKey: ENC[AES256_GCM,data:rucqZUSP+DYkiF6O321bB4zBwpvNhnsJGvHfA+mjSqcLERePUszBJdjBUXb0geBVhDig,iv:+44T2An8ci8HlkEMaekabNfGCfp7ngAUAtFI8vtG43c=,tag:MNVsd7zMJOSLtq5t56JEPQ==,type:str]
         publicKey: base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
+module_config:
+    externalNotification:
+        alertMessageBuzzer: true
+        nagTimeout: 1
+        outputBuzzer: 25
+        usePwm: true
 owner: pork T1000E
 owner_short: "\U0001F371"
+# firmware: 2.6.2.31c0e8f | state = 24
 sops:
     kms: []
     gcp_kms: []
@@ -42,14 +47,14 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2TWl2TnRFYkdkcHM5ZVpz
-            RDBQM3VZMlhRNkYrQmNURkxHMkEwZmtrYVRZCjBrMFZXTTd2Q3BNN0IvdnJzRlNv
-            aE1WMEVQUUpQMnRGKzdlTVVPT2daY1EKLS0tIHhuWTd1Y005WGgwTm12YU5udmtu
-            RU80T3UvdlhvYjN4R3YyU1dMMkozc3MKldf7j986DpTxJIQqhDgBpnhOf+ioArfw
-            ck3jJYG5ZEYVfEHql70J/mVQADjsQot9tCnC7du6gY1PqAj36AdPyw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBldzFLb0tzbnYzQWlKN1NM
+            YkhlcHltMnNWNnlxU2tocnhVL05TOE80cVNzCm5oOUNiL2s1WDdzRzZ3MGN4blBV
+            TDJBeC9jeCtMQjNoYmZDUldOY1VuV1EKLS0tIDI0OXFjaDg2KzRwdGovRXJ4eDJS
+            MEZ5aUhzc3ZueE5ubVNRSVoyV1YzNWMKSYAtQQXbkv2h5yKy0thqSlLMtZCazjjb
+            b8NrhdvMKqDVFBFn0IF+0f9KxNnWzUlaS74WAq7YOZjvxbZZsF/Jfw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-02-27T01:01:40Z"
-    mac: ENC[AES256_GCM,data:pWguwNCXbiTlfGzyNbya14FxZgnrbMUjgjUcIaxDYoaHxGCOHje6jKlH8lZXwMLE2M+IT9W+T5uCUWNmEOAosgqrqAsxb6VFXMFLLKDEckcyyU4Ztrn2Wmfs6wjYYz001vmD3igUAiyzjKfRdNu+h9P9AlyUn5cZUMIjTXEuTaI=,iv:4NeAIMWZm9ObTgHQYZCF+sr8v3e91bXXmH1ppmd+ySs=,tag:ooIwnD5du0fDsErUCyu/Iw==,type:str]
+    lastmodified: "2025-03-30T03:51:03Z"
+    mac: ENC[AES256_GCM,data:R/Zp0qVjitBUXRyleaAPK0qzawWw37YC7Tk+YwKQyo1QOm+57kQi1HGpq8nx0Ma6J/Tn7D8C7xhZQGpP6DCUee5NFfQDeIwpxnejTxBsgpcQdzqej/GNXc8ZX8nBXbcOA1DpDhSOY480dKdLwEPFvMjMSsUMoSUfGmZToy8E3Z8=,iv:4GOS/lQek0t/CvE7cBZN6viP/ff3of1IyJdGEll8VOU=,tag:O6yA5dmcnPmA54/7uTgy0A==,type:str]
     pgp: []
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.3
+    version: 3.9.4

@@ -1,0 +1,42 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:UpFvU5CJ,iv:09kZTdWemoUlHRRmPnBLBvmFCHK3X3oZMb35NHq0sfY=,tag:CfXrPLIbQadCX1u7ZZq0/A==,type:int]
+        mode: FIXED_PIN
+    device:
+        role: CLIENT
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 3
+        region: US
+    position:
+        fixedPosition: true
+        gpsMode: NOT_PRESENT
+    security:
+        adminKey:
+            - base64:a4G5cY5oxpNueGSajNKmDzRacraL23VgTvBiHw2e/iY=
+            - base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
+            - base64:StWJrm5nTQXebsJGILTQPOy/nMjc+Eay7MyRQIw3WTU=
+        privateKey: ENC[AES256_GCM,data:jna27u378eQt7vPWVZjY3q2NcBQyXgyljsplB2jhlT0nQ7Sdt4ROrZ4w3CsXsUlzmvYq,iv:EjMb5P4ch2I0mSUehwt8jfNHCvXDOfgfWJftZknNU20=,tag:TFyQ8UGDOvMi1Wi174onag==,type:str]
+        publicKey: base64:bUd4A9Y2WoboZcMzPxTj4Rv1I5Ng2HEv0mvuKL55Oi8=
+location:
+    lat: 40.6564
+    lon: -74.0078
+owner: IndustryCity cc42
+owner_short: cc42
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBcXQwcEdkTWhJdmkzSmlK
+            SUpiSXRSYkd6dUw3b1o4QjJPM3pKeFFxUlM0CnBSNUlGVlFGdFc2Z3JGSFJlTFk5
+            alc2MEN1bFp0Qk1YT01NOEYzRWNBVTgKLS0tIDJIN2F2V0xRTHVjeG9HSmw2T1Q1
+            U3B1SWFOQlh2cUU2NUZZZklvcHB1YWcKsOHyDSZsilqgeL39MFZ5a8bdnH3v0WPJ
+            cs9J5ZVTMB3MW1L5DbRE7BSZW8CslfxJH6JMLZUM2fnkUJYlmVR/0Q==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-05-02T00:38:38Z"
+    mac: ENC[AES256_GCM,data:T1yxR7G8NXNUY+Grs62wM6/+lnZDr1HQz3Dh6g4DEXJAFLYEx2gF8YcBBSYEvXd7PPLFNLbKOVwJK/x5d0LOXElaHUKMepHwA/6qaD9MhEvWgR0cx6piNpUoz+jCYcfXOxjaXEJp3jRJQjD/uh8uNIp/7AEHzI46Dy8WJ+Xh6Vg=,iv:mYlGUmt1KLdD+kuD13Xr170u8gGx262p4T+PzasCiwU=,tag:5kSugJ35L3QuRrUb5luAJw==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
