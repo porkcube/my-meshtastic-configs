@@ -1,22 +1,31 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:SVCIML6piUQ3WJC97Ru1wfJE7vJg6/iKc/Wng8f9IRSECBi6cW185ljSdC/nq4lUAPFB/G2V5OFV0xIDtQ==,iv:MIvm43qOj4ejtAUSOIT+1MJ6bngcCGwe0nF23i2ZIPQ=,tag:UnQQ1Ttrg5Jaqk755YIRyg==,type:str]
 config:
     bluetooth:
         enabled: true
         fixedPin: ENC[AES256_GCM,data:0A2VOYVR,iv:tw843s/Jv76lTaiDK+3z64kNt07k6RPy59Re7+hj5YY=,tag:jJUtpfqWeqiXYPGgyyXEjA==,type:int]
         mode: FIXED_PIN
     device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
         tzdef: EST5EDT,M3.2.0,M11.1.0
     lora:
-        hopLimit: 5
+        hopLimit: 4
         ignoreMqtt: true
         region: US
         txPower: 5
     position:
         gpsMode: NOT_PRESENT
+    power:
+        deviceBatteryInaAddress: 42
     security:
+        adminKey:
+            - base64:a4G5cY5oxpNueGSajNKmDzRacraL23VgTvBiHw2e/iY=
+            - base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
+            - base64:StWJrm5nTQXebsJGILTQPOy/nMjc+Eay7MyRQIw3WTU=
         privateKey: ENC[AES256_GCM,data:7jLZ3s8NoYmOt2xDfiXgf40UrBbLxfil9y2xcWRzgZzBKP7I1pjM5k0/+IgSuOxfeI8P,iv:cDF5dWGhvl6CzmPBpZKYXDbL3F7mnEo/7riJuL4WqzM=,tag:iPgjY+xuFt7SYRyuBd2n8Q==,type:str]
         publicKey: base64:V9yyBualxNv/b+J7C4cnUijXagzLmggvp3i/MD42hjI=
+    telemetry:
+        powerMeasurementEnabled: true
 owner: Meshtastic 4548
 owner_short: 4548
 # firmware: 2.6.5.a93d779e | state = 24
@@ -31,7 +40,7 @@ sops:
             VmFtdTZ3bHRBbytSdmVnbUxwcm15N2cK2Bp1q2jOHASP7s8o7AFGssBuHOX0qj/p
             9GoDCDroqMThKf1TmyZmiD38KZ/9Gab5BikcfhZu2m4jwxSB01W0NQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-05-04T18:14:46Z"
-    mac: ENC[AES256_GCM,data:mdg7Fp48K8PorAttn+hHLvBgBrGuDm+05mz0/gzJxTlu57df5UkBfDREzA0UiDRw9A67XXtIeZoqOAeGIIprVLqCd2BxZOXKUURMKWi5bKTEf88B+yfabWPV3yhxFQtKeSkEM6tRLlFG1REvpn00pjZD0/XRc4jtmW54bc4zxkE=,iv:YqsehGROqNuhzpjOXS54ZztcgIGjMifZN6nN6KEV1ds=,tag:bpmL03t3dzQm399Vl1kJEg==,type:str]
+    lastmodified: "2025-05-08T00:53:54Z"
+    mac: ENC[AES256_GCM,data:1aP2tgrLV2O2ZSEZknFH2uDBoCIkwCas5SRM54OkgoZHT0oc4E+5gsAs2+AlVSlL3ysjt17GSMN47/710uVnzczDBkEFQlNNHND6dtenOSU7ORC0bOfNEnNOw6Eg6JB5CE/raR7graB+J9fel0DPK+V3qr47wbtWTS7CilEQfZM=,iv:91hMBhCOREzpRKPtZmz8M0Zcsp+rTP0gQ9W4nqPDrf8=,tag:CY+8odfrLbynuojXzew5ZA==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.10.2
