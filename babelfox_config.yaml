@@ -1,0 +1,34 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:TJhNOy1JOnQOAqauGCfZ8ljGmorKD9kmVSHPOdSEKWjxy9wCax7mwmRTY99/tcoaagt3SkgI,iv:9HlyJoBI3pdQ2zXK77WJM4Vz/D9rVkhBjlcggJVxnrc=,tag:fdIvnc9059q13Ft+0qkAaQ==,type:str]
+config:
+    bluetooth:
+        enabled: false
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+        txPower: 10
+    security:
+        privateKey: ENC[AES256_GCM,data:2Ws9frEH07QkRWCAAn+tDlALYRXPVQZA7aNIKucBsAhTRXZly/lhxyt8LtPoIIWKGDo5,iv:1rIHCre9qQAT8TsN5poHI8AC29xHGA5ciOB5DEzcEoA=,tag:i7gNP22TOE6kkA91LatQPw==,type:str]
+        publicKey: base64:CBpOFmbDYVG3fx/qE84iSO6ZMJ+Qss6XvZ8wCtLWS0k=
+owner: pork babelfox
+owner_short: "\U0001F4F1"
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3dDN3NUsxV1JsSDNpbDNw
+            b1NQZm5mQTJCU3hSeEowS3gxYmJxQXEvdlZvCk9VSnFOZXN5ZkI0anI2NkFVcHl1
+            SVI5NlhaNlU4c2duZzhPMFI1K2RlcWMKLS0tIGd4VlRhcVdQdWF5R2hDWWEwY2lm
+            dEgxc1N5WUpkWllJbTJSYi83NklZVmMKcPjNc9FdffQoKnISHwoMc2g26hizo5L7
+            dhjA/Ihh/HvylsVbdb+9d5EG2lnvhXirIXVFwHkhxU81NJsKWyv0pg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-05-12T00:44:27Z"
+    mac: ENC[AES256_GCM,data:N8LqgCxhO4eoPbmkMYPAh3KvKzixnidDNeHQZB8Bih+WuOZIga5Zgv58cPLgUvMACO853zsDSytB/b02NhWaBF3M835g/w1ad0Qhz/YNHvnZ3Gc3+B6KkBsnkeFmIKoO0xcI5U67i7jNmJAke3r9hrD2aBpc1W0OEIGBOaJKcyc=,iv:TS3z/TSMqX0ptuwzDMv81dlM6WhJ9cyYk6nTNMPiyaY=,tag:jmiuzk9X/U6cpxZLD+7I2Q==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
