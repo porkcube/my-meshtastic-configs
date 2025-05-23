@@ -1,8 +1,5 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:TJhNOy1JOnQOAqauGCfZ8ljGmorKD9kmVSHPOdSEKWjxy9wCax7mwmRTY99/tcoaagt3SkgI,iv:9HlyJoBI3pdQ2zXK77WJM4Vz/D9rVkhBjlcggJVxnrc=,tag:fdIvnc9059q13Ft+0qkAaQ==,type:str]
 config:
-    bluetooth:
-        enabled: false
     device:
         rebroadcastMode: CORE_PORTNUMS_ONLY
         role: CLIENT_MUTE
@@ -13,22 +10,22 @@ config:
         region: US
         txPower: 10
     security:
-        privateKey: ENC[AES256_GCM,data:2Ws9frEH07QkRWCAAn+tDlALYRXPVQZA7aNIKucBsAhTRXZly/lhxyt8LtPoIIWKGDo5,iv:1rIHCre9qQAT8TsN5poHI8AC29xHGA5ciOB5DEzcEoA=,tag:i7gNP22TOE6kkA91LatQPw==,type:str]
+        privateKey: ENC[AES256_GCM,data:MNv8VVedtn0KMYa2e/4gfOI6zZm3Gi9YfrbEWyklNKNZ/NDtvNJbHGu4QaTfR8eU+auq,iv:+XtlAliYxa5G/VjlIR5rudSkwnc+O5YDd4v76Erfdn8=,tag:lZ7+8bX4IF3nC14VC7M2BA==,type:str]
         publicKey: base64:CBpOFmbDYVG3fx/qE84iSO6ZMJ+Qss6XvZ8wCtLWS0k=
 owner: pork babelfox
-owner_short: "\U0001F4F1"
+owner_short: "\U0001F4F5"
 sops:
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3dDN3NUsxV1JsSDNpbDNw
-            b1NQZm5mQTJCU3hSeEowS3gxYmJxQXEvdlZvCk9VSnFOZXN5ZkI0anI2NkFVcHl1
-            SVI5NlhaNlU4c2duZzhPMFI1K2RlcWMKLS0tIGd4VlRhcVdQdWF5R2hDWWEwY2lm
-            dEgxc1N5WUpkWllJbTJSYi83NklZVmMKcPjNc9FdffQoKnISHwoMc2g26hizo5L7
-            dhjA/Ihh/HvylsVbdb+9d5EG2lnvhXirIXVFwHkhxU81NJsKWyv0pg==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjbDRBSzZhMStKbU5zZERq
+            bUl6Ym11VUZnWjBtbjc3MldBNFZ5MGFidEQ0CkVSc01YemNQakxWU2w1a0hhRnJi
+            KzRzY1o4cW5wcUcwUHFRVk1sN3c2SDAKLS0tIDlZK3NpdmlZZmtzVzdodm9yeXow
+            c0hJMXRuc0FNd1hkT25PcEJYSHdpKzQKIeqVpao4Q7iye7cj7rknRv6DXQd8Vk0l
+            /AjugC8zD+O9pjLexoI35HHkEU4RcIN6vFCPxaJJJhKJxcB8zcRU2g==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-05-12T00:44:27Z"
-    mac: ENC[AES256_GCM,data:N8LqgCxhO4eoPbmkMYPAh3KvKzixnidDNeHQZB8Bih+WuOZIga5Zgv58cPLgUvMACO853zsDSytB/b02NhWaBF3M835g/w1ad0Qhz/YNHvnZ3Gc3+B6KkBsnkeFmIKoO0xcI5U67i7jNmJAke3r9hrD2aBpc1W0OEIGBOaJKcyc=,iv:TS3z/TSMqX0ptuwzDMv81dlM6WhJ9cyYk6nTNMPiyaY=,tag:jmiuzk9X/U6cpxZLD+7I2Q==,type:str]
+    lastmodified: "2025-05-23T00:55:37Z"
+    mac: ENC[AES256_GCM,data:CS/mRcLeyTpOy+9+FDD3GFvVHnJVvBOCB80tr4SZtKMlsa2ef42jJfTDlAQbwj2IMNAemAaSfvDixiiD1joiRAs+XtTiWfmXnc5wG5nphzWYSe6Mj78OdmJXSM1J6mY0IIIqeWGh12wjgf7Gleg+UjRpsSHA4Uxi1l7maVAbrKY=,iv:3DJKM6zRLhYTFl0C9Zq6nHnZVYzByUIyVWQ6Qc2bx10=,tag:iVuJIDa5J+STi/h4f9Wtaw==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.10.2
