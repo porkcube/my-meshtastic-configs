@@ -1,0 +1,28 @@
+---
+Lora:
+  Module: lr1121
+  gpiochip: 1 # subtract 32 from the gpio numbers
+  DIO3_TCXO_VOLTAGE: 1.8
+  ## E80-900M2213
+  CS: 16    # pin6 / GPIO48 1C0
+  Reset:
+    pin: 4
+    gpiochip: 0
+    lane: 4
+  IRQ: 24   # pin19 / GPIO56 1D0
+  Busy: 25  # pin20 / GPIO57 1D1
+  ## E21-900G30S
+  RXen:     # pin22 / GPIO136 / 4B0
+    pin: 40
+    gpiochip: 3 # subtract 96 (3 * 32) from the gpio number
+    line: 8
+  TXen:     # pin24 / GPIO134 / 4A6
+    pin: 38
+    gpiochip: 3
+    line: 6
+
+  spidev: spidev0.0 #pins are (CS=16, CLK=17, MOSI=18, MISO=19)
+  spiSpeed: 2000000
+
+General:
+  MACAddressSource: eth0
