@@ -1,0 +1,32 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:XzB5d0adASN4IjUw6rRG+p5RE8awp2LN7eb/xw0gwOH0nH6hOovkxrFTdrlFYHPx4w/QTtk6LUhvbfNj0g==,iv:wiithS8PB6TN/DkaTZP3vyOl24kSi+9YrwwBBRhxWtw=,tag:uLma0ZRiG3C1IBMjMvfSpw==,type:str]
+config:
+    bluetooth:
+        enabled: false
+    device:
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+    security:
+        privateKey: ENC[AES256_GCM,data:WUvNUE+pfaKXQw6r0b3ldzZmM9EmbR0OgBGyfYBur3lP63Fb61jps6tjYp3g3zGF2uuD,iv:jEDoNJJ0DCnyP3WUt6+tw++XpyuU907uKPdq2QKQZhc=,tag:bW3UmBCn78tMtwvbBwEmhA==,type:str]
+        publicKey: base64:i+4ad7A1eckiFxnub1CYO9EGkHBtxy4YJ1WtMjJuHVw=
+owner: pork ultrafox-lyra
+owner_short: "\U0001F9BE"
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqVElaMlMrUWdqNWFCY1VL
+            ejAvcTdQYVlzRStLbmRvWW9RNjVWb0oxQWhrCjkwNmF3MDdxZE5pOXZsajRvdjdB
+            SDVYTzV5VkxDNXc1VkdXNW81RjlpQjAKLS0tIDhTK1JwMGlsVEUzYzI2UUd4SnhD
+            c2JubExXMElYTE42OWxJR3hVTGR6ZEUKoGFtfKkxPtMPqLnYOrz1XXb2OokIWavd
+            RBtNr2tAlIoZle0hkop9UVvC2aGvw5kVJtTLm5rJYJVauGKJ/KFVHw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-06-14T22:20:31Z"
+    mac: ENC[AES256_GCM,data:4h4YL7X/mOMCAQj77QZBpsa7EtfkAZFDpNsR6pjG5SL54aO6509OF4JOcIdKu/CDpkyAcJgEfk5Q6HZLUfjR+JCJgEj5pH3PN/FuHcuEyzY3/WOesw0v1m0Z8TGiBlrZcGNkamISh4iJX40b0kv0RK6QdPYUIJRnX8DRO+Emb78=,iv:lLYgHvs2xhlprq5tn8emTbijH8IqAyGHYZV7/Ciz8dE=,tag:3sTPBTNfkpHUsjleZwteBQ==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
