@@ -1,0 +1,38 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:QF0BxDG0,iv:wK7KIl8wZAh47fA0c7V0o8iUFItw4WSWETAxwAgFF3U=,tag:Ko+F/QbTr0GQ6JmgRLswvw==,type:int]
+        mode: FIXED_PIN
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    display:
+        screenOnSecs: 600
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+        sx126xRxBoostedGain: false
+    security:
+        private_key: base64:qAQWfJ2DMgq5Kd7R/aiNhxbDsFNNgevomuHQF1AfNUE=
+        public_key: base64:s/OgepBUdFGBzbUPc5HP2SBeaAYGKJRS2+seVAYi8To=
+owner: Meshtastic 8e6a
+owner_short: 8e6a
+# firmware: 2.7.0.195b7cc3 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2ZU9rSzFFZmhzRGtYRjFv
+            M0ZEWHRocVloMlpZNGtoVkhmek1TRDhqMDA4CmtPaDl0ci9naldNMzNTVzBuQ2xl
+            L1RpN3pYZjRNWkxtT3BPTDlNQlVaZzQKLS0tIEJZaTF5a2VGTFlZRXJVRldaeUY1
+            aGx6aEp5STFHdUR3WTV3cmtUN2NRNnMKyRRt74/8S4scnwaQGVtqyTtdvpffvZ+v
+            3ERsvzKjgN3eePwchC2ZYDTb7GpfDU/DkBJqMU65jF8GCh6gQEEAmQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-06-21T22:39:48Z"
+    mac: ENC[AES256_GCM,data:VxSzEEyO/urfW9UmCewqsyOu1+YyqisiMevFXXKxp/8K9/SYGchfq9SXdEwoUURPKxZERxsZIziOlQGuOsw1xgjOAE9I6dJMzwrfY59X25MYEaYRW1o4Rs/zjRUXAK5G5juJZ33TWC0GZeeePgwWEHMpWIb3yXisXbnMFu6t1C0=,iv:7tMPDW/8cokhmoUhZOJTe7R0hoWGf6Cog1NkSr1lB/Q=,tag:xi00/retBDa8QjaHHMMIZA==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2

@@ -1,0 +1,40 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:SNnW7R3v,iv:nhKvF5RMXcgSQ24tCWcAZTUDDqBePq/qGG8likXyX9g=,tag:uT634fG0hefU5g6+wdViDQ==,type:int]
+        mode: FIXED_PIN
+    device:
+        buzzerGpio: 6
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    display:
+        autoScreenCarouselSecs: 15
+        displaymode: INVERTED
+        screenOnSecs: 600
+        units: IMPERIAL
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+    security:
+        privateKey: ENC[AES256_GCM,data:CcraGSe36iS3JUpgGSEHZzFBOyjFKQqr4PsVFlqS7g9Y6OQwvl7pPmPdF14/0X34WcNh,iv:bgSkS5GcHFFgFFw3OG2fs+cCeV73EN4g0IvTK6baycQ=,tag:ZRT30zZcpuW5wVVrGaAZDQ==,type:str]
+        publicKey: base64:EPXT13eTEL/lEtCVMXg33Bm56t5SKm8xZecuPzpqFy0=
+owner: Meshtastic 3cbd
+owner_short: 3cbd
+# firmware: 2.7.0.195b7cc | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3Y0c5VUFoVzZFZW1NR3dj
+            Q3E2c0YzTjRUVThpK3ZkbjB2dmpwSUlmMVNnCmxZZkxXRTdTUFVPR0UwamNLYUpI
+            Z0Y3T3N6bFlqVmNSeG54N2hqcEdwS0kKLS0tIERCOHNOcWRNc2hiRFo3cjRQbmRp
+            aVl2L05rQVNTU3hpSU5rQjBIZmYybFkKRJSCWhw3Bseaj1YwD1gUN0EEg+ALhxcm
+            2otjDtn5gqRcZ2IkPc9hPt3P+dZrTfEcTgSk8njqHZWzHzV4QXss4A==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-06-21T22:46:43Z"
+    mac: ENC[AES256_GCM,data:/bTC7FuTWXqHyEbyOP3rKdXfOzG5YALOOBXdnfGHE+/pO+otYnzTJyKe0EwUZeSZgPDbKhorla48sOpx4WfFdq8qshMvCv14qpjydT2dXuSil1vEoTiygAbryIGHFv2HWQpqm4GdKgHbCJ52GnhykteIfVvrk062dqQGSitNykw=,iv:DYDp/aK0RY1IrcrnF0dpCK0WPvG/W2dY7mjGK9OxQLI=,tag:dePJy9lmneNRm0TTi1RKCQ==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
