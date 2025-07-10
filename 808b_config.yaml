@@ -1,0 +1,44 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:6eAbdNcjDzqjPmBLOWh76qDEqhh88vNq22kpJNtQtboPTMtXpcqguXnUy8BT3Rqffh2kDh90q+Ok8g==,iv:+40QhIftrFr2Nz3S+PBslclpUU5saXR3gd/662vNFqE=,tag:ULtQalqTYT/z9XEdPymmhg==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:MUnfNQi1,iv:CGoxWv2UJ/c0Mwn351v4+uqYCd5mJBBEcsjXAdrbT7Q=,tag:K5Fp/3wdIdyEZ4nzJmM4Og==,type:int]
+        mode: FIXED_PIN
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    display:
+        autoScreenCarouselSecs: 15
+        displaymode: INVERTED
+        flipScreen: true
+        oled: OLED_SH1107
+        screenOnSecs: 600
+        units: IMPERIAL
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+        txPower: 22
+    security:
+        privateKey: ENC[AES256_GCM,data:kLykFCa4UeDSZxGq1VSWwbfP2FsmLzJOBMhcj1dm+yUy4tqOXeAdpzWBOpLjx7zTYEsR,iv:FLhorak6tNIzsfUnNNv5Ln/6InZcEva9nJkPN2T4Xeo=,tag:lWz7HCAPKdeO4K4Dtih/5g==,type:str]
+        publicKey: base64:O9nqwF93rokUlxCOA2Id+Z7Jos5buld5VEB5IQ5VTWg=
+owner: pork ikoka stick
+owner_short: 808b
+# firmware: 2.6.10 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBcDJ2TEtHNEoxY2VYWW5h
+            dkFpQ3V2Q05VM3RNbU5BbzRpSE5Oc3FxbWtJCnVxY2RxTGtVdzkxWTNRZUlUOGhF
+            cU5wK2pmeUN5ZGRWcFBuaXJmVDg3cWMKLS0tIGNidWd4akkyU0d6MjZqYnduMm00
+            U0xVdHY1c21uSG4vb1d4dE8veHZ6SjgKIVZSLrPfhtd043ER6+9DeP0ipDwkJMY+
+            maXNakPIxbJBUFTIeO/QFk9PDCRWX3Nm7EHtQncDGobVkbKnWZoQfw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-07-10T02:54:59Z"
+    mac: ENC[AES256_GCM,data:jcdoAZEvS5lLbOLK2k7DE2rKJlc4tVsQz8TkWKkKi9qQhqBbV/hYJapkwZcFnpQZV2mkuLQUQAfTpWbJCgXCMOcsOoLLDexogtxOZIV2EJ0pM9A50oG/zORQGn1GetDR8dXGChNrLZLO2hxFEBC/LGiuHv2bg3YYbm9If5XpkNM=,iv:bfEdVfmms2TiIQ921C3EhkiX9U+V6030g1f5zYrvIe0=,tag:WbIw4azDvMkKbSTpp27tDA==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2

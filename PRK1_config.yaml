@@ -1,19 +1,19 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:b2esdZI8MTr4PTy2WCXaE6I0tmhv/LlMV1u5XttNHn7lWmUEQgvYy7BdVRVhBsttxB/CvggzkC2EjtMFDQ==,iv:85jZE53skfMCEtIUiS3iCz87WekYncaLd9TU6t81XVs=,tag:jsNxZAuv+KGmEy2hfBJjFA==,type:str]
+channel_url: ENC[AES256_GCM,data:JsDN7HxthXhFxDiSkrJmijgB19+WTyZD7NC1Iom6tzOh1Lltf37QQgP2s4DTOQJ/fd0PkngJ7ICgcFT6UQ==,iv:mN4l5uZ99mn+Q3ts1npGbLHvfoyHYYYzxc+Sst67bQs=,tag:e8+LnfKyFf/tLOQbjwR77A==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:Gn0w4nFN,iv:XrS9CEkL7Y9Y6dYoKgSvjsXv3ZW2JXm9Y+OcHIZBXQA=,tag:Ubfl3N8lHCmixgqeOE0nNQ==,type:int]
+        fixedPin: ENC[AES256_GCM,data:nNBrlz5G,iv:fjbOKOxxjpf1azVli5m0CMTbS/NHFh+9l8MnfF+9IJM=,tag:/cWf4r/Bab9An5Z71nroEw==,type:int]
         mode: FIXED_PIN
     device:
         buttonGpio: 31
-        disableTripleClick: true
         tzdef: EST5EDT,M3.2.0,M11.1.0
     display:
         autoScreenCarouselSecs: 10
         displaymode: INVERTED
         screenOnSecs: 60
         units: IMPERIAL
+        wakeOnTapOrMotion: true
     lora:
         hopLimit: 5
         ignoreMqtt: true
@@ -21,13 +21,12 @@ config:
     position:
         fixedPosition: true
         gpsMode: NOT_PRESENT
-        positionFlags: 41
     security:
         adminKey:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:bZCQjWR1aK2BWIy1G3H5cTGMz9vAdzUZiar2YfRv452hQccOXnXv/Uh6VNRRw02Zt1j5,iv:+8uqUfzNBOHH400PgZCptjwphuIeG8gG+uRSb7iw5j0=,tag:vzDXh/XX6IbfbnD14hp6Eg==,type:str]
+        privateKey: ENC[AES256_GCM,data:sEFMxIXcFF/S93AE7psSeBO5dXw77RFLoHEFAZK+OGQCjBuOhQCBdcnWhsyO05k9KGwy,iv:owtVjMMGzTMgF5iybe8TepXOdr/uvChRurLnqeLAjOo=,tag:z5WZoSW19NwV6kp2M24xjA==,type:str]
         publicKey: base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
 location:
     lat: 40.71
@@ -39,23 +38,19 @@ module_config:
         environmentScreenEnabled: true
 owner: pork d446
 owner_short: PRK1
+# firmware: 2.7.0.195b7cc | state = 24
 sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzZ04wZmRPRW1Oa3V1cXow
-            bDFwR0RhWDBCZ0JPZHBPMWFoaGVrbXBralRRCld2NGp0QjErWjU1M2RRbmtoN1Jl
-            MVowVmcwR2pyMWZFQzRBTWNBUE5SNjgKLS0tIEtBZGN2RHNiajBMSVQzSXY3OEYv
-            UkZyVmRRc2M4L2RwYjZqWHBFMXVxcWsKLUANXP2J7c+qfzxgqXsNGhLq8PdmKC0J
-            l2xPZfeXi/zTbOlV2nxUiRhN0UftGvAhlm0GmurTgXA0E+o/wcLd1A==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzb29oMHZNdHdCRFIwcGdL
+            ZjExVU9ySW1mbHFNbVRKRUh2ejZ2VzJrdFM0CjJjd2xGUWZDeWtGNUc5SE4wd3B5
+            bnByMXl3Vk4wOHVZNWxEUFUvWmJRcGMKLS0tIGxaTjFxY1BaajlITXVLV3pNMVQ5
+            NXo5U08zT3lOOEJTZitTSlJucXplbWMK7rP8RJ+74fKn36KOIytygimLuE2FTIPR
+            6cGXl1m78v+EKjexo7kFdCLbc2xIW3wQ9VZEBwikWDtuFY2S8wo8Fg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-02-20T04:13:09Z"
-    mac: ENC[AES256_GCM,data:XLHMISPA/+XJ59jEMhrjxf9I6yKo+wjHFNgcHA9fC6inYFwpbVuOcZoIatYuo6KpoMCS+s15rmRe6dDN031P0B8DnVdA2CHQrg5c2YwCtMgA8HVw8mKKKzugbLQAjcIMm77XkN2PdifTKSEVMOCORanIIyb4LCiAzjmZd2FeEuU=,iv:NMcErAcpow0Bl4nnitQ1EuoCTNIDD75IqMMaBxUEdFY=,tag:cOceru+H/2Pulmem7EIlSw==,type:str]
-    pgp: []
+    lastmodified: "2025-07-10T02:52:38Z"
+    mac: ENC[AES256_GCM,data:ewtH3Z/ml1CoCd/3hw9vOsCwXOct85Kyyh9KND8dn+aq+X3aW1KGA3EVmoZZD6Wj32uVhwiw0ZEMLBwh/Um7EAWok+OU/8V8SdAG7pxpa1qzM30GJpE7jcCmDwHb7J51ABrG4nTVvcSJmTXa9Jse5dyF3CjKWdNTYwIHlOosGJQ=,iv:+ZEGYK+Wck/lhMBXbAPSf7hZWGu8S4q7mDK+bJeVZy8=,tag:SkR++X2s5jn3T40IVz5+dg==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.3
+    version: 3.10.2

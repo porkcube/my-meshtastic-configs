@@ -1,0 +1,31 @@
+# start of Meshtastic configure yaml
+channel_url: ENC[AES256_GCM,data:Qt5OkzjrvA2NrA7MHphAJdBkcyg3/0Kn1y38aD8pPNjWBTo8z3v5Txo3QUfApsVd6932uU33,iv:cCDjbIRPeHr2RR8gDuP7DjU9/snuEg0QVWaB7i7+vZM=,tag:o1m+OXNimY79wD5liGEywg==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:E7fiUL2v,iv:cOBQVd9OjLLdR2m/aNRQkG9v8bwVEcDhdwSn7ZAV+x4=,tag:3Exp19DapjhErOPODrnD/A==,type:int]
+        mode: FIXED_PIN
+    lora:
+        ignoreMqtt: true
+        region: US
+module_config:
+    telemetry:
+        deviceUpdateInterval: 2147483647
+owner: Meshtastic 9c65
+owner_short: 9c65
+# firmware: 2.7.0.705515ac | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwUTFUUHRkblF2WE9IQTdk
+            OURuSkswak1Pc3lobm5QQ0hoQU55dWlPM2xRClhRb29rYTA5SEd0ckJMcWk2YkdM
+            VjhEZ3ozQjZPOGFlc1EvOGh4T2MrVHMKLS0tIG81cUw5M1czM3pRQ1EyL2Jqc25M
+            V3I5eWNuUDhHR0lKNndCRUZza3BJSjAKBez/AGiGVgvI98EgzMUmLDMs1nLljzAh
+            xwV/8qYOy2me/HZ/RMZq+GWPlL6gU/XeyKnkx44/DDj/Rn7Z+noz4g==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-07-10T02:55:52Z"
+    mac: ENC[AES256_GCM,data:ka5Dzq8rOH3ZNHT4cDj1CZGdWLilkrCyp+CbRNmsRMU5vxvhTxubNM6SKWtGzIZB1+HNGTj8QH1+zfg8C5frrtpQS67K6GW2MqSGI96HJYmRnBk5+xn8CwhoF6DKs5SqZdFhXzV8IOGD1APUAUSjuMChMaBB6n9XRQtotxwLr8c=,iv:NSjo1oN8tPdOrBeYh3MNSLn4Fhof7MH9MwkcZxoSKl0=,tag:huyRIWUIy7/w6MyFJCSHUA==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
