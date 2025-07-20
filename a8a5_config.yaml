@@ -1,0 +1,48 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:YeNFz22/,iv:zEdHkJsvpac2doxlLcD9nrPOt2ayA1qmuY3XuyWRAyQ=,tag:jLT73K/dkcPbx/NYtklLng==,type:int]
+    device:
+        buzzerGpio: 12
+    display:
+        screenOnSecs: 600
+    lora:
+        ignoreMqtt: true
+        region: US
+    position:
+        broadcastSmartMinimumDistance: 100
+        broadcastSmartMinimumIntervalSecs: 30
+        gpsMode: ENABLED
+        gpsUpdateInterval: 120
+        positionBroadcastSecs: 900
+        positionBroadcastSmartEnabled: true
+        positionFlags: 811
+    security:
+        privateKey: ENC[AES256_GCM,data:s6VvlDg8ancyJ4+FJz7ORz3YbRx3zANELBs9BHYC9tkhNNTnq6Du87dgTyl1N8vvoNEQ,iv:2OFYoQl8KTlblkzBJJHGjeqQFRIdMCsrSBsNlk6C4YE=,tag:J/j9SGqMS+8REg6kdewa1g==,type:str]
+        publicKey: base64:bMDiUf+bv8LRVE5/1/vCxha3noKd+9NMV49EYPumpUg=
+module_config:
+    externalNotification:
+        alertMessageBuzzer: true
+        enabled: true
+        nagTimeout: 60
+        outputBuzzer: 12
+        usePwm: true
+owner: Meshtastic a8a5
+owner_short: a8a5
+# firmware: 2.6.10.9ce4455 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0aEFzUXJQYXVYUkQ2cFdu
+            aHJSMVZlTzl5NFp5YmFueXRuVzRLWk54dGc0CmRkYlpXWmVmTWIxUW5ZeEdkUXV6
+            TS9uZ1FXR1hTaGlkYVpVMjl4cjRWbEEKLS0tIElod1R0U2Q5VTlYbFh6M0lEWVFv
+            R1N2cGIvWlY0UjFGQXJ3TjQvdGRIT1UKJGFdLTvHLcErXb7nDA0oH+SNQEPW/HSe
+            JWk7oa5pw6SNs31GXMOPW0dSVLf2Xro28ZtHpMkdU9pFDBic1p5EXw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-07-20T20:37:31Z"
+    mac: ENC[AES256_GCM,data:p1qtux6Dr/NIMB7Xx+V2lUX2y6fliHeUJHgJNAsCSaekyatuSkJcMpcJHnZVeVFohhykvWIFH+us32qMB33un401EBt2lIMUZZnC8LElBFex8PccSN+Hw/26jhLdi1DOZYXBfLDQQ2mW1/pVzjamhFQxuZHVwqvLWwonLJipNnM=,iv:+Dul1u+nprAaDNT7FwkcB94nq9BUQqUCvg0QlLF6XCY=,tag:rSNztrgfEU0Du3dMgS61uA==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2

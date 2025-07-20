@@ -1,0 +1,33 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: false
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+    security:
+        privateKey: ENC[AES256_GCM,data:vaK9GIzmIEqyRuJDdDHflTSLHtUyMJJEJ0VN558oE0Ko4rX5mTbCbeB3N8yxTtHQ4K5I,iv:/ybdu6PhaP8rVWvLF03oE36yAI73I1K9Ere70ANVDKc=,tag:ggzZc//GDXEJxL10wBPs7w==,type:str]
+        publicKey: base64:rcYDCv65/mqBLA+1rbeSEnOFhXkAHTafl+Q0LPZauTc=
+owner: Meshtastic 752c
+owner_short: 752c
+# firmware: 2.7.4.73347c254 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwWm1Ua1V0WjR0YzFGNVpT
+            V3FZNk1CVXkvZFZQamtzRldaTzhzS0hzSERVCnRGa3JObVhPMzFLL3h1MTZwcTEr
+            TU9EMlNQUnkyR0htRHNWdHNkcDhEeEUKLS0tIG8rVGN4eUFCSjRORU9QOW9oRE1N
+            U3VtSkVLQ0g4UWd2Wi9NY1dEeWpkbjQK6MBrKy+MwpfrhMGGdl4E63VnIwX3xowT
+            PRoUhVde0LGyGqIPdcBMihFtESlJDXqEEIsoFfa01fVNifLQaNJiUw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-07-20T20:33:04Z"
+    mac: ENC[AES256_GCM,data:0OzW1BcEIhGFcbRQRnlEh98KspUiNSFCGM7vNYe+vf2vgDvUPXICQAZl0F3IKfujORT09L+NF5wKZ/CxFX2GxrLExRcWmQUMq75q0926yCoeZfzertiIUEJnLAgDE0qcz+HciYvtWBkWdDG83dlt5GSHJcJhiYfPW7WYl8zHfB8=,iv:aQ/gRMTxvz73ncZQvSGW/hsoIk876MlEuDbF9IhlIdY=,tag:mBS5wSywcu/YC472FS01og==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
