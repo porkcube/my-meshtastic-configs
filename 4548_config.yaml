@@ -5,6 +5,7 @@ config:
         fixedPin: ENC[AES256_GCM,data:8Oc5d27l,iv:W8EZVns+Nph2/xNqipnfJudVAQji2YZib9HGJv3DPCw=,tag:vh0yRM+UH483JF97Fq0nhA==,type:int]
         mode: FIXED_PIN
     device:
+        led_heartbeat_disabled: true
         rebroadcastMode: CORE_PORTNUMS_ONLY
         role: CLIENT_MUTE
         tzdef: EST5EDT,M3.2.0,M11.1.0
@@ -40,7 +41,7 @@ sops:
             SHM1YWlTVk0zeHIxaEFzYWp5REc0c28KpeYn64VAatj0G3V0TtuAIaSk5L4NkwPA
             6OlvGN/g+Gz/DKHUtiRcGDjd3sg1OjClDUo2FhDL1wjQVZqlucL7iw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-07-26T23:43:55Z"
-    mac: ENC[AES256_GCM,data:tO4rIUfduFaPO5tqFadsNE93Piqwq09hdZ71LtChNMCZh2nuSmn7agY2+lNWVP/Xiw0HoE5AIJrFFFaoBZQeGhMYs5rdePhRAabbjGmD3xm6032mJjNwZExqe69tWOegDy51f/q9Opvno8VvFSfTZXH/adf1ip0gZ/G4cg3S7Wo=,iv:Vj7KFrHr0lkJHjAoLpkttoHBr7EhLVZG9qg2E9k4wHM=,tag:PUGi7GYYQ9EvYf4NJ06S2A==,type:str]
+    lastmodified: "2025-07-26T23:48:15Z"
+    mac: ENC[AES256_GCM,data:vjFeK3wKroI0RQDy9/4BdMGd6O9ooU1fDkNUqojs6ywFeLDYMqHYdbKf4WaRv9mvVqZ/tjsHVE56zKdEaiJpIjV/kST4GdXCEM9/sDoayNwbeihC+viknUku+HdCfnpY1kyw2zkRPEiQEEd+6k1KcLVLHlQ7hqzSCW0KCrHBXeU=,iv:FNuyj9O9sYT5rwzDS0C6p8EyJF3zn6lii03gr6olA/k=,tag:twq75OvHIRdEmANEv+jmQA==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.10.2
