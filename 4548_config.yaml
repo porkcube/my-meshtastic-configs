@@ -2,7 +2,7 @@
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:SeNTB4qZ,iv:A5H1bCPFAE6Q3/M7BHXxRfYZOOxZo+kASbfuvY8hPxM=,tag:NszC7ybMxd9zpV4Ke3tJIw==,type:int]
+        fixedPin: ENC[AES256_GCM,data:8Oc5d27l,iv:W8EZVns+Nph2/xNqipnfJudVAQji2YZib9HGJv3DPCw=,tag:vh0yRM+UH483JF97Fq0nhA==,type:int]
         mode: FIXED_PIN
     device:
         rebroadcastMode: CORE_PORTNUMS_ONLY
@@ -13,8 +13,6 @@ config:
         ignoreMqtt: true
         region: US
         txPower: 5
-    position:
-        gpsMode: NOT_PRESENT
     power:
         deviceBatteryInaAddress: 42
     security:
@@ -22,26 +20,27 @@ config:
             - base64:a4G5cY5oxpNueGSajNKmDzRacraL23VgTvBiHw2e/iY=
             - base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
             - base64:StWJrm5nTQXebsJGILTQPOy/nMjc+Eay7MyRQIw3WTU=
-        privateKey: ENC[AES256_GCM,data:x840YW5C1I/R4Aax8SNDiNyJV0g7aaFVObmZ8Tzrkuf+gLHeNLf46xCvovgGJOQQ2PjH,iv:e1V4sspRTgxBC7Hfuf/5zGuxjG7jDuySQMTXugns3Ug=,tag:qzJpsMcD3uE6BIuH5eJQGQ==,type:str]
+        privateKey: ENC[AES256_GCM,data:WqpaM75A/4OVwtLhMri/MYl67kTjnrKH9UF8qiX8YfbSDCtIjY10tkCU9xfZnCqs/Txk,iv:84jDxxfUXWMsid8khk4pUzIOWK4dYJuhth+jROiP6E0=,tag:9Vc9Bt1tBkaO8rOzJL7y5g==,type:str]
         publicKey: base64:V9yyBualxNv/b+J7C4cnUijXagzLmggvp3i/MD42hjI=
+module_config:
     telemetry:
         environmentMeasurementEnabled: true
         powerMeasurementEnabled: true
 owner: Meshtastic 4548
-owner_short: "4548"
-# firmware: 2.6.5.a93d779e | state = 24
+owner_short: 4548
+# firmware: 2.7.4.7c5e2c539 | state = 24
 sops:
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWVU1LZ29FVkYvSFBLVjZw
-            QWpIK2hwTzFwSG81L3pUOElwUGZOSWZkem5ZCm5tTGRxOEN2ZzJwNDAzRWpZb2Mr
-            Vkd5LzlwT213ak4vOG1JQ1RRWFdhZGcKLS0tIDNaNkFUWTZWRzZXdlJkLzZRQ0o4
-            REpIZnpUN1JrQ3dhekh0Zzl3cE9VQ3MK8RNaNne3gZXYcB/2Lw8+JHHg0mRMESLO
-            VVtAX67hWJrhLcVnHh2m6oWI+yqVcWNjhTQGa1MX2J5S5AuX4rLshQ==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDNEphWDM0emtGTXlYajdm
+            WmZZbWxsWU95L2dyN3NJLzhicGd4ZlB5YmlVCndOeWhnUEpBSHVKYkJKNFoxTDVK
+            M0l1Lzk1L1I3STBnZFAvU0ludU1PUWcKLS0tIFBsanc2Tms0RUtyN0hhenFhcFRj
+            SHM1YWlTVk0zeHIxaEFzYWp5REc0c28KpeYn64VAatj0G3V0TtuAIaSk5L4NkwPA
+            6OlvGN/g+Gz/DKHUtiRcGDjd3sg1OjClDUo2FhDL1wjQVZqlucL7iw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-05-08T01:26:13Z"
-    mac: ENC[AES256_GCM,data:tk8PX82MURHFuqeirqcBYG2VdTI40nKcuMa7uPyqZcu9r5yk8LoOmCxpNBxrCMTl9CnBasZYhxroMxT+n2SGhSxgx9gdFyBzCRLZBQ7rbbIQYrV+YwVMXAQI8vcpc/uuASzBoL3tyP3rrkdZs4IltznNQWV3AwNWxeU2oP+OW6E=,iv:yS8jeBK7WTbMQRgTUfmW8fAARo5wbXb0FR1/6us7Ql4=,tag:s/SZyjqPLnuzq7OV/K6ITg==,type:str]
+    lastmodified: "2025-07-26T23:43:55Z"
+    mac: ENC[AES256_GCM,data:tO4rIUfduFaPO5tqFadsNE93Piqwq09hdZ71LtChNMCZh2nuSmn7agY2+lNWVP/Xiw0HoE5AIJrFFFaoBZQeGhMYs5rdePhRAabbjGmD3xm6032mJjNwZExqe69tWOegDy51f/q9Opvno8VvFSfTZXH/adf1ip0gZ/G4cg3S7Wo=,iv:Vj7KFrHr0lkJHjAoLpkttoHBr7EhLVZG9qg2E9k4wHM=,tag:PUGi7GYYQ9EvYf4NJ06S2A==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.10.2

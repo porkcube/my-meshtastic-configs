@@ -2,40 +2,39 @@
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:v4KS31ha,iv:ozBiV/lpILVt60+DptT0sfUR/fWt+4OcjC44b4LhJMg=,tag:KIddOEbcdK2GKIzRZKBcCA==,type:int]
+        fixedPin: ENC[AES256_GCM,data:TtdPitPo,iv:3v8KN1pezBe0Tmm19ldiFXzr2TodgqAXKTRrYM1vjdI=,tag:eTfoLKmcD8JLCNNtZZwzOg==,type:int]
         mode: FIXED_PIN
     device:
         ledHeartbeatDisabled: true
+        nodeInfoBroadcastSecs: 10800
         rebroadcastMode: CORE_PORTNUMS_ONLY
         tzdef: EST5EDT,M3.2.0,M11.1.0
     lora:
-        hopLimit: 3
+        channelNum: 24
+        hopLimit: 4
         ignoreMqtt: true
-        modemPreset: MEDIUM_FAST
         region: US
-        usePreset: true
     security:
         adminKey:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
             - base64:StWJrm5nTQXebsJGILTQPOy/nMjc+Eay7MyRQIw3WTU=
-        privateKey: ENC[AES256_GCM,data:Tf3aBz48C+KYQwqdOxTQna2ggOT9p3XsVRg2stDobt/7l74IR6MDFrsMO1Aj5rES1LxG,iv:AUD9G4AtiQkpMZUW0U5ne0RbNT9+zpmZgzZMlOXkmNM=,tag:GDKy8V34zDJ+px22/ALcLg==,type:str]
+        privateKey: ENC[AES256_GCM,data:QL0324sAfZFaZdy7h2Xc3f+9mU9uUPZSnGgBq/oq7Lth4p0CQ8ytl4hPShsZ+y8OP9W+,iv:8XGpjue2/p9Akqn/ToI0VKnRmgzvaWa23zWJ0/Jjqto=,tag:SmzFPtS9acR3I0ix85GwwA==,type:str]
         publicKey: base64:DVGf9sQb2wj5/v0AkkOB+kNgtqJyi7Y8h0bwCHKPf2g=
 owner: pork koishi
 owner_short: "\U0001FAA8"
-# firmware: 2.7.0
 sops:
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3ck9RUHM2R0IrNVJhajFy
-            eFRIZVZkMHN6SGhzNWFvTGZnNjduMkVFWG04CmNxcWpxczVPdGhXQnZrMnZoU1ov
-            cmdaRSsyOVY2S0xOT2JibkxHQ25ISDgKLS0tIGdOTDc1NlVVcytCVy9XOTJlb2xn
-            a0VWOG5FNUZldnNsUnhSejdYQjAwQmcKtL0hrYekYHFDObXcaTaYxmntHaPMDwko
-            2WYPLdq7TQ1/eLeOANxPS+EfEbZTN/zeGANGhZqnh3TYB1exp/NUoA==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaenZZb21VdGw2VXpYUk01
+            VVk2M3RiUVdwUUV4MlA3NGJlbkNLQjhiNHk4ClJMckd2SVRjTDhoWExIalJLNFI5
+            cUo4RXBvNmlKRy9yQ1NMaERZc2lwQVEKLS0tIDBCZVE5SmxrUWZHN3lSdTdoUDk0
+            bDBoNTlwdHBXWkpQMitxeVRFRW5GVXcKjQOGwfE/X21oFtamN/zvVO0AZKEqg1EI
+            w49TycLbtq5XiiSFoA1sTAe+HnoE9Zse8uG1CnyWw8fmJsgkLyaIGw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-07-01T01:15:49Z"
-    mac: ENC[AES256_GCM,data:fylwLA2OD8AmFgRW0MNMfP+oy0Hn3L0DdWuHJ5bTKvQtbUlzZzxylgwCn2HDEIXRcwaJbdzivC+3mZrJrf0kStPgInRWicQp+4XgM7F6p8XT+SAx0geeNmYTVe2A3LHZ/trgg6KeU8/J73vudUOwc0tthvWbYDqesYm5JhVsY4o=,iv:YKEvYbrWv3Y8spsrfl4wI+bohH4urQImFskcSzQr14U=,tag:GCaswZaw2ySfo8WF09Ph1A==,type:str]
+    lastmodified: "2025-07-23T22:48:41Z"
+    mac: ENC[AES256_GCM,data:XpRsYRD3od8ivi5rNz+XnNUU3zFbDdD7C9TJpWojx9guFbHFLSQmFGtFP3bN0gYCuy0Z9nEurVTEWjHUZMoFdw6nSmzhMXT/z+yg3bWrGe9e/qJqXdtPyMWC7UOZ+E6t/2uUBy07suH3VsyxSDFGpfNTCj8rkTKweQ2d/HYBvZ0=,iv:R43kT81lXCR4qPhIq1DeOyDu8ilPXt2gKx3R8Cdoed4=,tag:aWIpmbkbyyRo9RgECEgc0w==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.10.2
