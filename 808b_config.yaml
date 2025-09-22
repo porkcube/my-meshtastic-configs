@@ -1,9 +1,9 @@
 # start of Meshtastic configure yaml
-channel_url: ENC[AES256_GCM,data:6eAbdNcjDzqjPmBLOWh76qDEqhh88vNq22kpJNtQtboPTMtXpcqguXnUy8BT3Rqffh2kDh90q+Ok8g==,iv:+40QhIftrFr2Nz3S+PBslclpUU5saXR3gd/662vNFqE=,tag:ULtQalqTYT/z9XEdPymmhg==,type:str]
+channel_url: ENC[AES256_GCM,data:vX08rX8SH0X4ImuXBs3gbdFnqdx9iuUQ1R9aiYOP+3PfuEbzBF+t97YZbbbzcnsiCRvvOf6m1TjhpQ==,iv:0fr5Tnw9ScsGaTh670FU1s+Ij5BbY25TozlJTZCFigs=,tag:VOrw/8qvZdCEKuGIuRVWkA==,type:str]
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:MUnfNQi1,iv:CGoxWv2UJ/c0Mwn351v4+uqYCd5mJBBEcsjXAdrbT7Q=,tag:K5Fp/3wdIdyEZ4nzJmM4Og==,type:int]
+        fixedPin: ENC[AES256_GCM,data:ae6SyyA6,iv:UEfx/8GNpS/DVjMHrzHKpJtNpB7kRHYvcAmqnVRCmq8=,tag:D8Pn3nczJLSE4+z1MAff3Q==,type:int]
         mode: FIXED_PIN
     device:
         rebroadcastMode: CORE_PORTNUMS_ONLY
@@ -22,7 +22,7 @@ config:
         region: US
         txPower: 22
     security:
-        privateKey: ENC[AES256_GCM,data:kLykFCa4UeDSZxGq1VSWwbfP2FsmLzJOBMhcj1dm+yUy4tqOXeAdpzWBOpLjx7zTYEsR,iv:FLhorak6tNIzsfUnNNv5Ln/6InZcEva9nJkPN2T4Xeo=,tag:lWz7HCAPKdeO4K4Dtih/5g==,type:str]
+        privateKey: ENC[AES256_GCM,data:SeV10EnN+CfmHK6NHlkRVXXu9VsYIxVhVSLjQMoS3kYIYjzAoBXefpVflTjKQiesGYt0,iv:UfDtq4x9cZSICxNSyKv1F4LBABCrNIH3xrFYOg9y7oU=,tag:u7bzktZfU5M7uaVakdjRUg==,type:str]
         publicKey: base64:O9nqwF93rokUlxCOA2Id+Z7Jos5buld5VEB5IQ5VTWg=
 owner: pork ikoka stick
 owner_short: 808b
@@ -32,13 +32,13 @@ sops:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBcDJ2TEtHNEoxY2VYWW5h
-            dkFpQ3V2Q05VM3RNbU5BbzRpSE5Oc3FxbWtJCnVxY2RxTGtVdzkxWTNRZUlUOGhF
-            cU5wK2pmeUN5ZGRWcFBuaXJmVDg3cWMKLS0tIGNidWd4akkyU0d6MjZqYnduMm00
-            U0xVdHY1c21uSG4vb1d4dE8veHZ6SjgKIVZSLrPfhtd043ER6+9DeP0ipDwkJMY+
-            maXNakPIxbJBUFTIeO/QFk9PDCRWX3Nm7EHtQncDGobVkbKnWZoQfw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1ZExrM3NDa2JOMGZ2ZVhq
+            ak5STDZodmxjbW96ZzdKc0VjL0wyc0hzODA0CjQ5K2dqVXNEbkZUaDNkWUxPcmh6
+            dlB5alJPckQ5RUQ5Mi9YeCtUSUwvSWcKLS0tIG1KT0dNQ1ZQWUJSWWJINEk5MUZP
+            alFoNmV3MUhKNUhuY2JiY0c3azdtSWsK0NGbQPDUP7zvF4XbZ+6XS/xdFNJs6hRP
+            fgiMButllPzKsO+K5rqHKsezPjTdnDfzSVNRJmKur5EpuhGcumU++Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-07-10T02:54:59Z"
-    mac: ENC[AES256_GCM,data:jcdoAZEvS5lLbOLK2k7DE2rKJlc4tVsQz8TkWKkKi9qQhqBbV/hYJapkwZcFnpQZV2mkuLQUQAfTpWbJCgXCMOcsOoLLDexogtxOZIV2EJ0pM9A50oG/zORQGn1GetDR8dXGChNrLZLO2hxFEBC/LGiuHv2bg3YYbm9If5XpkNM=,iv:bfEdVfmms2TiIQ921C3EhkiX9U+V6030g1f5zYrvIe0=,tag:WbIw4azDvMkKbSTpp27tDA==,type:str]
+    lastmodified: "2025-08-10T03:55:09Z"
+    mac: ENC[AES256_GCM,data:PRYbqtkLihDNbkA0dDJsi1oR5o4uOHwd7802OV9JVaPblbv2p/BcfwNk8+CzLR7t0U66TSX6J2/d7k80gYHbU9NyVHoMRj8343XRjdSSmlv/F/NcqzAZ8al902ya9MEzQcaTFHGXoTNxZIWVblXp6ms/PfR1tP9mJuriHA2m0+s=,iv:QjEeXVXVeJ/sMzj8Pp7balXJWrsc63Rn3L/Df/Bpw9Q=,tag:2F9rv+S9xJ+Zv++CnWy67A==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
     version: 3.10.2

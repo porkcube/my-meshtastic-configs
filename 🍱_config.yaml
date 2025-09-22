@@ -2,7 +2,7 @@
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:fO87dy7C,iv:tXN2V40HysWIKC2GcKXROLkqdUj3dLy5UNzMhU9l8nk=,tag:Xa72AGV9BXdbvtlxlySOAA==,type:int]
+        fixedPin: ENC[AES256_GCM,data:zRDtn0Am,iv:wbOFtq6S22XpkCjUOfL8L4Bz2Kkx4BfZJgUc6R422O0=,tag:Ptib4LIO91Cjf3EkMJnWkA==,type:int]
         mode: FIXED_PIN
     device:
         buzzerGpio: 25
@@ -27,7 +27,7 @@ config:
             - base64:DVYcURJN5/T9ANlWcINogNspTCtnW85E88QdGC8yjHg=
             - base64:M+EBhhlz15N1+tlR+x62djZzl/V2s3Q9bh+4hkvISj0=
             - base64:/EKT0S2f1y9mBEJHITqTQEr8OiKdGgCl/Ol8mtIUhzA=
-        privateKey: ENC[AES256_GCM,data:rucqZUSP+DYkiF6O321bB4zBwpvNhnsJGvHfA+mjSqcLERePUszBJdjBUXb0geBVhDig,iv:+44T2An8ci8HlkEMaekabNfGCfp7ngAUAtFI8vtG43c=,tag:MNVsd7zMJOSLtq5t56JEPQ==,type:str]
+        privateKey: ENC[AES256_GCM,data:/uULLnyVBJ1SHBZ5K4+btpOU37vDJ8W/7CVRLcGuG0Ge5yZJ2OPw0xov+xRXWglo/kdO,iv:stqh8HUr9c2xuo2wucLCVthErU9qvWRCISLWxr0csFk=,tag:DjTKp3Uw4IX+kzrzOa0drQ==,type:str]
         publicKey: base64:IJYJKEJg8+Tup3B5Fh2l2I0l5MnmMKvvkRQpzRjYASI=
 module_config:
     externalNotification:
@@ -39,22 +39,17 @@ owner: pork T1000E
 owner_short: "\U0001F371"
 # firmware: 2.6.2.31c0e8f | state = 24
 sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBldzFLb0tzbnYzQWlKN1NM
-            YkhlcHltMnNWNnlxU2tocnhVL05TOE80cVNzCm5oOUNiL2s1WDdzRzZ3MGN4blBV
-            TDJBeC9jeCtMQjNoYmZDUldOY1VuV1EKLS0tIDI0OXFjaDg2KzRwdGovRXJ4eDJS
-            MEZ5aUhzc3ZueE5ubVNRSVoyV1YzNWMKSYAtQQXbkv2h5yKy0thqSlLMtZCazjjb
-            b8NrhdvMKqDVFBFn0IF+0f9KxNnWzUlaS74WAq7YOZjvxbZZsF/Jfw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpcGE1YldlUUFTOWpFckJJ
+            RlNDTHhFdk9yMy81STF2OEMybXpONHBZNkV3Ck1ETXMxSkNuQTNjRTcrL1VZdGI4
+            R2pTVEdBdVNPSUdKYVJMWDJ1K2FRREkKLS0tIEtUZ2RTcjhpdlFyRE1QRTJHandL
+            NXFwdEQzQUlMc3FpNVZkcGdMRzFjZ2MKrBEAUIs8Bs9ErGdyeZLYeveYu5OBuZ/2
+            0/DkT/Cpf+cQlgnx1bJIIkKR+qeMXSJCxvLy28GbFpvZ+YDV7vDexg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-03-30T03:51:03Z"
-    mac: ENC[AES256_GCM,data:R/Zp0qVjitBUXRyleaAPK0qzawWw37YC7Tk+YwKQyo1QOm+57kQi1HGpq8nx0Ma6J/Tn7D8C7xhZQGpP6DCUee5NFfQDeIwpxnejTxBsgpcQdzqej/GNXc8ZX8nBXbcOA1DpDhSOY480dKdLwEPFvMjMSsUMoSUfGmZToy8E3Z8=,iv:4GOS/lQek0t/CvE7cBZN6viP/ff3of1IyJdGEll8VOU=,tag:O6yA5dmcnPmA54/7uTgy0A==,type:str]
-    pgp: []
+    lastmodified: "2025-08-22T03:34:41Z"
+    mac: ENC[AES256_GCM,data:oycH2dsvnLpc5VjOSpZkOxf78QoGNLus840YAUcgWI/n/OcB7Wmhsgwryqd6K4sFhXtric2nVVgFJJ4/UC+NVDmXVcW6DBv9PJv1OXzmtC38f5xpSAkk0orzs+Tjkgezc0wsy/zMLl06hxA10pH1m81Klis5RmVVfedAyfGeg/w=,iv:9dll/SJtMXUYK4aPCMer4BClqUoAIgYi2F0VCAMwljQ=,tag:Fzn9pwGXWjn4t+ByIxKADA==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.9.4
+    version: 3.10.2

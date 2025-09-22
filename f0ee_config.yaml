@@ -1,0 +1,37 @@
+# start of Meshtastic configure yaml
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:IGoHPPmE,iv:YtHD3UOmTXNOpKIdOU0TXaQBZz4TjP3H+x2V+ZDsxeY=,tag:LJG0/ogmmmqPowEu4ZTxBA==,type:int]
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    display:
+        screenOnSecs: 600
+    lora:
+        ignoreMqtt: true
+        region: US
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:7RFOlxevYfkJop5R0FnlSDMID1c3qdzJbjvC6CEZubU+cfOO64Qa4+A30zNFsT8dpsO4,iv:8XckLqm4N0IS2PTW3xqGvE7rAlnqlsFRaWfENnrLxjA=,tag:bRABK6QQBJIuCZ6JZB03fA==,type:str]
+        publicKey: base64:OMFHkw/udOhddjD0CYKQNQY1nuSxtF4DE6cQCsPRRwQ=
+owner: Meshtastic f0ee
+owner_short: f0ee
+# firmware: 2.7.9.70724be | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUcGZ5SWJhUnhySGVQNzlO
+            YXpwaDZKNTNpdkxlMGo5elpNY21sTm9FbURzClRGNXhJSkNBTXhvcWE2VHNxdy9C
+            WnZreHNob09vNElvZ2lkanVqNDBEWGsKLS0tIDNGVG8zbjk3OWp6bjR1OTQ0anpv
+            OFNHajdlWVFtVFpaTXhkUkN5ckh6MXcKQyYsE3J9zld3ZkdQpga2HByssjEXK6km
+            OseYknTXP/fGrbd1JSTgez1uPro4KCE1DuOLoqBhbcJrWA7UhJY6Mw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-09-21T21:36:04Z"
+    mac: ENC[AES256_GCM,data:NsROSvLosLCQI9pJpePH2ccvtkT8ppoO5x1evSTqg9LO6T1eVV2UUI48fcOftO7j1WSOl6bCEJYhNAerugYyWPYU7m7CtVR7lCXNzyZZk4JENYegoqq3kra0lsgPJ2xhWE5A5usbiEzRHa2dTir0h5OhQ7o6+ZRUYwvgaghSSzA=,iv:yDFJx4LM2hnEDkqabhLiKzLp5Ch4i4CyfjIQ2Dl1W2w=,tag:q5sGOiwq1RIq4HEPrT0Z+g==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2

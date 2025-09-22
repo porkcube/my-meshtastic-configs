@@ -1,0 +1,43 @@
+# start of Meshtastic configure yaml
+canned_messages: Hi|Bye|Yes|No|Ok
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:HoN0PhCj,iv:0cK8TcSOXVwmjPoSbvrJc9F8WCZ1wuwW3zqNfBmZCZk=,tag:k1CpL4CV2wfmeQ05K1+iwA==,type:int]
+        mode: FIXED_PIN
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+        sx126xRxBoostedGain: true
+        txEnabled: true
+        txPower: 30
+        usePreset: true
+    security:
+        privateKey: ENC[AES256_GCM,data:GlHzf8bcf4wuNRKJAfldg22EwXAAF7+9J9+qsW1No4O+bxSQ/grjiZao6QIEiqZY+8Ry,iv:cp3IMtNBwzGIZSGrp+nUBCDRiqDQX9p12E9VvfnQugg=,tag:rpRfBV9PaUevf4N0FIW47A==,type:str]
+        publicKey: base64:I3wFhD0APhwkzW51Fxi83KVCJCxPj2QQtQDQC6wgKXg=
+module_config:
+    cannedMessage:
+        enabled: true
+owner: Meshtastic 4e84
+owner_short: "4e84"
+# firmware: 2.7.7.5ae4ff9 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJRGI3MkNlTmJMUVFTYk4z
+            enZnaW5wV2NlZFJDTHQ2YU01MHZXZU1tMG5ZClRjL3VEQUd5REt5aVhjeVJveVRs
+            QjNHSDVYZU0rWXlpRGlGYnQveTNtMFUKLS0tIG1zVTNidjZMa0hoMGh5YnZBUDN4
+            eVlsUWR4YWFuTG9MRmtEQVFITGkyN0UKtRRgmzuanJJob6muSmaq0m6vwnOLYcKC
+            S0q1yVcvQQJ1+v6dZj2kpzaDWy1bwAL+cOMSKo6PJ/pZ2wBCSnNP1Q==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-08-31T02:54:52Z"
+    mac: ENC[AES256_GCM,data:9TOYwe2SXsmZiP4E3Dps8SkocVMFyz69LSOKMSnUuczqofYuH4CckqAmbac/zcwnaIjt6ZuOVmiQcGC/yfCJdwJlnUBDGSNNRAdrL2AQb+Y2GMfDXNRD2sfCqW+5Urh2c6J0OMX4VgVxe9F4VXnAd9nWN/uxwrjgSSoABfiv9Vg=,iv:Yj/qxYCjGm6c4pcn6XuinReOgpAr/8rxLt0XnLDphDo=,tag:IogeimMllQMpGUmw+wpwDw==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
