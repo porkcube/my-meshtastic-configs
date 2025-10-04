@@ -1,0 +1,45 @@
+# start of Meshtastic configure yaml
+canned_messages: Hi|Bye|Yes|No|Ok
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:5lrx1zVL,iv:owVe5UCy8+qGU1uWRVJ0AsjYbUYLqWc9cVRfqjV81+I=,tag:njMsHjhYJaiANtXMsMH+ZQ==,type:int]
+        mode: FIXED_PIN
+    device:
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0,M11.1.0
+    lora:
+        bandwidth: 250
+        codingRate: 5
+        configOkToMqtt: true
+        hopLimit: 4
+        region: US
+        spreadFactor: 11
+        sx126xRxBoostedGain: true
+        txEnabled: true
+        txPower: 22
+        usePreset: true
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:R3wn0+37DhDNyXXFpQsUGZuWdjo/jVrBezyeH1A5BtO/k+N4YT8qzaBs1jnNk0TvR+W+,iv:FoozcHCZXuMcTHpsWgHeN9QGeeRA5p3g77sDA4pehyc=,tag:k94h6gAY4dNYIWidhMaQtA==,type:str]
+        publicKey: base64:eWz1ZF9bu1BxWWdqzF/Ft9AiJ679d2Zvt3o5YvrmkHg=
+owner: Meshtastic 7b1f
+owner_short: 7b1f
+# firmware: 2.7.11.ee68575 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaa1NrWE84RlQvTG9WT3lV
+            Z3didkNxY3c2S0JQZ0NmRXpSRUpndFRlNTA0CnVuWk1waUJIT2xtZFFFZ0tJbWZw
+            S2prYXNGTzhJU1ZuTmNxRE1sUzJWOUUKLS0tIGN3YmR3N1RFMVhHMk9zUzJOTWNr
+            UzdQRm5hM3dYc3duVVVGbWtSTi9lK28Kf69Ic0VTa0G64xe2FtA129VTwteGOf4V
+            z6FeZ+H4xXlvhKxBqG3h4hVqTf8/vvvfXR0+gGvwAbVxB9E9+BFunQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-10-04T01:26:59Z"
+    mac: ENC[AES256_GCM,data:2+NcJ11OH9LVRNpPQJ5SO2tod++dj0MT9op1WPZir85d5K2rseCPAT/XE0VVJHL96aWrvTbdOQIvTAogT7DsUAd8WsfhWpzoEFRMy+GQQFzbQsxHxBy6eHnlUyuZRJMdyBL+2eMjt/nOB3UoVLtkjwxWk/yZonL7Mac5PG2LcJQ=,iv:1Fv/pPMKhbLhc2+MLV3mVVsdh7kj8EdBQRbP1VQQMtQ=,tag:QkMuBb5PzJ1kNBvMuVgWhw==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.10.2
