@@ -2,28 +2,35 @@
 config:
     bluetooth:
         enabled: true
-        fixedPin: ENC[AES256_GCM,data:IGoHPPmE,iv:YtHD3UOmTXNOpKIdOU0TXaQBZz4TjP3H+x2V+ZDsxeY=,tag:LJG0/ogmmmqPowEu4ZTxBA==,type:int]
+        fixedPin: ENC[AES256_GCM,data:uci6n5+n,iv:mhCTQyeYq3blBWdwmDu9TweR7aI2a8uLeCJkSHFCkpI=,tag:lCNX6p44gEtUGtmyQG/F2w==,type:int]
         mode: FIXED_PIN
     device:
         buzzerGpio: 33
+        nodeInfoBroadcastSecs: 10800
         rebroadcastMode: CORE_PORTNUMS_ONLY
         role: CLIENT_MUTE
         tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
     lora:
-        hopLimit: 4
+        hopLimit: 3
         ignoreMqtt: true
         region: US
+        sx126xRxBoostedGain: true
+        txEnabled: true
+        txPower: 30
+        usePreset: true
     position:
         gpsMode: NOT_PRESENT
     security:
-        privateKey: ENC[AES256_GCM,data:7RFOlxevYfkJop5R0FnlSDMID1c3qdzJbjvC6CEZubU+cfOO64Qa4+A30zNFsT8dpsO4,iv:8XckLqm4N0IS2PTW3xqGvE7rAlnqlsFRaWfENnrLxjA=,tag:bRABK6QQBJIuCZ6JZB03fA==,type:str]
-        publicKey: base64:OMFHkw/udOhddjD0CYKQNQY1nuSxtF4DE6cQCsPRRwQ=
+        privateKey: ENC[AES256_GCM,data:cykFQ8K2wqnsjcfWfCgo/sx8CLXAy9ni9ES5BqT4C0ZgDCb+xbJDXte0I4ZJwQfn1uNM,iv:4iSKZZIPrmS03pg+UnRjBYqjPhtUHLL/dHZCLl5tGj8=,tag:f5b+JrqBv/FCUF3daM8X/w==,type:str]
+        publicKey: base64:SlDzyrQoEGYc1umjACJ8uOtyXCVg/sZLmA/2P28aZXg=
 module_config:
     ambientLighting:
         blue: 238
         current: 10
         green: 240
         red: 88
+    cannedMessage:
+        enabled: true
     externalNotification:
         alertMessage: true
         enabled: true
@@ -31,21 +38,23 @@ module_config:
         outputMs: 3000
         outputVibra: 33
         usePwm: true
+    telemetry:
+        deviceUpdateInterval: 2147483647
 owner: Meshtastic f0ee
 owner_short: f0ee
-# firmware: 2.7.10.cea9e12 | state = 24
+# firmware: 2.7.11.ee68575 | state = 24
 sops:
     age:
         - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUcGZ5SWJhUnhySGVQNzlO
-            YXpwaDZKNTNpdkxlMGo5elpNY21sTm9FbURzClRGNXhJSkNBTXhvcWE2VHNxdy9C
-            WnZreHNob09vNElvZ2lkanVqNDBEWGsKLS0tIDNGVG8zbjk3OWp6bjR1OTQ0anpv
-            OFNHajdlWVFtVFpaTXhkUkN5ckh6MXcKQyYsE3J9zld3ZkdQpga2HByssjEXK6km
-            OseYknTXP/fGrbd1JSTgez1uPro4KCE1DuOLoqBhbcJrWA7UhJY6Mw==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1b2dMS0Naclo5Y3pXTkRp
+            Q0FhUTgwaFpFV0pzWlAvR3BKcjJwU0FkZ0cwCkV3d0h1L1RYT09BNjNBZkZmbTQ2
+            dW56aGpXWEhJVnlScTllNG03RnRCaXcKLS0tIGwybTlYV25vWE5kUktTWEE0akMy
+            TnRUYmVtTUlxSEhRMFFUNlh4a3lSQmcKdjwT7PYx4g32sn6PvsoMR6wtML3l0mxc
+            C2GCp2H1hiSFFeCkehkKn0aHU7YW8a1cbYRP73irE0DJbKMURQUVPA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2025-09-23T04:05:12Z"
-    mac: ENC[AES256_GCM,data:NL1c/XvvK3dnZUjlHQzDX8lmZWDkWQWoo1LVBlyuNMhqFwD3SNlGLbZ3ewykQoRzX8SxWPAbx3mCH5UT6lYdyGSLdqe5nvTlRqKSk3duZ9CtzK6HJn0rwhRRDNn03Gvr1Pr2AeLTl6B6jDv5WQRNWiPRtLDpWaqN1KoTMc/Me0M=,iv:wZoQ3reOqV1VmcAnVKCbU96JQtFZvTANA0bhvx81zFA=,tag:TLoosMzGH+pBwMADS55rDQ==,type:str]
+    lastmodified: "2025-10-07T22:43:33Z"
+    mac: ENC[AES256_GCM,data:KhPIQoW54WTPXgKNjqGcl0jj8zrZgL805Oo//dKCNfPrpqXg74MW9NZNN+HgZX7FN3IA/WHBvFLV0mnVl4rPEdJ2eZxku9vQorJPAh4MMwYSjbPQXD+nMlLR7gvAmKvOozEAZqFQt4Wtw+sy9dvdUrSDcRzKCtzZU0HUWtIx3lc=,iv:whPt6PMcU0/gQ9wK8fvfVoK1z2zAmPUVBwK9nOf9wk8=,tag:4kiPAhaIkdjTmcSwIqpRPA==,type:str]
     encrypted_regex: channel_url|fixedPin|privateKey|password|username
-    version: 3.10.2
+    version: 3.11.0
