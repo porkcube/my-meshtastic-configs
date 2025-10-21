@@ -1,0 +1,50 @@
+# start of Meshtastic configure yaml
+canned_messages: Hi|Bye|Yes|No|Ok
+channel_url: ENC[AES256_GCM,data:o0RgnIAq0cNMR5qy7HniW2o7139Fm+pixR4SpXaKqK+Hq642O//r+oS71/YIqStz+Iy2sO887BYYsqI62RRe3NpfLIM2pg==,iv:ayNoDXzWUU0kbg7J2VJlIOL2/dswcRB1G2/yRZW7Sho=,tag:1iEDapYhtz4oSb5s7kQ9bA==,type:str]
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:LNan/QXl,iv:8m8G1xC15jC5KmaM6EQ5v8qd0TLfH+IkuETuvNy/b5Q=,tag:N22HhK5/FuatJ2QQ+qsPhQ==,type:int]
+        mode: FIXED_PIN
+    device:
+        nodeInfoBroadcastSecs: 10800
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    display:
+        screenOnSecs: 600
+    lora:
+        hopLimit: 4
+        ignoreMqtt: true
+        region: US
+        txEnabled: true
+        txPower: 30
+        usePreset: true
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:cQQPPUrTUIZavuNO+RjUxLK53hvXJ1VGN8VA4oscyx0QI6CnTrzsCYGdevwYD8lACEAA,iv:9DNOlteiGimvyq2AT2an3ilb0RY29gHp8M9T4o9dvko=,tag:hF0aHIgA9e6xN4xt/idPjA==,type:str]
+        publicKey: base64:VFxzGncwGTDblEsj+hLH3HDpgbh9dWn8V168db4rTjM=
+module_config:
+    cannedMessage:
+        enabled: true
+    telemetry:
+        deviceUpdateInterval: 2147483647
+owner: Meshtastic c01c
+owner_short: c01c
+# firmware: 2.7.13.f4ff210 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3S0FzN0ZiWjMrNzE0SWFh
+            Q1J0UmVmSDNGSHBZclRNYVdqdmFWaElTbFcwCnZIcDY0V1d6WjhScXphVTRhYm9M
+            alRoNmhNVGdJbVVmKzdrV3JWY1pJdlUKLS0tIHVxWThMdHY5VTc1QzhSWXJzZUtN
+            eDY4aUQvZDV3NnlLaXhRUEVSSGVQQ3cKiyTgb1k+NZeq4V7dZTj2SbpShdP51wLI
+            yyJVQVvGr0jgNsePC0LNSH7RtNbunAZwCXDLi3n2GCwHjps8pYKJxg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-10-21T16:43:41Z"
+    mac: ENC[AES256_GCM,data:pEW8p9zQmjdjtlbMYksApuW/DRYIUvOBY/DZiaflBwLh/f1j6MkMN4uLby2DbcxFTO2DxISUZbYJRRSldXeIUuzRhG7d6Rynp5XrRHmqbGB2lCSecPAl76bF7HL6rnL8U6NMQwHboFFpmBAQN0EwKzJiA+xrO84Fwx9q2lpJB7s=,iv:WjH0WYFrSWA3M+jcOQwq7aKT2gK1G5kNiwErFQnRRCE=,tag:b6zLL+9VTBgnFY4Ufwpcyw==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.11.0
