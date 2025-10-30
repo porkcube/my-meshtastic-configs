@@ -1,0 +1,59 @@
+# start of Meshtastic configure yaml
+canned_messages: Beep|Boop|Hi|Bye|Yes|No|Ok
+config:
+    bluetooth:
+        enabled: true
+        fixedPin: ENC[AES256_GCM,data:JFzjiAak,iv:mlX7DOyYEsWPi1Ld5g08il98/ZTM0lIKCE/t2hgQBmI=,tag:8P1RU8kYZtj7JE4nk2nCHQ==,type:int]
+        mode: FIXED_PIN
+    device:
+        buzzerGpio: 11
+        rebroadcastMode: CORE_PORTNUMS_ONLY
+        role: CLIENT_MUTE
+        tzdef: EST5EDT,M3.2.0/2:00:00,M11.1.0/2:00:00
+    display:
+        screenOnSecs: 30
+    lora:
+        hopLimit: 5
+        ignoreMqtt: true
+        region: US
+    position:
+        gpsMode: NOT_PRESENT
+    security:
+        privateKey: ENC[AES256_GCM,data:0PqhI0udzuunX3C6HOmmm4lsBseeXmcNFBhPAZlStwX5BGjX6Nh996Cf/0+T+dKQZK7X,iv:lxTDwPjhJvKrPwOLK+DclfuDwC6zVlSUffdIkdaEc24=,tag:Iofdc7y6rVmTzdH1OiZLKg==,type:str]
+        publicKey: base64:I+UyTd9VOglMaML6uUSLWlNms1SUOzUyBoBDwvDBkAE=
+module_config:
+    ambientLighting:
+        blue: 4
+        current: 10
+        green: 12
+        ledState: true
+        red: 80
+    cannedMessage:
+        enabled: true
+    externalNotification:
+        alertMessageBuzzer: true
+        enabled: true
+        nagTimeout: 15
+        outputBuzzer: 11
+        usePwm: true
+    telemetry:
+        deviceUpdateInterval: 2147483647
+owner: pork C6L|nyme.sh
+owner_short: 0c04
+ringtone: 24:d=32,o=5,b=565:f6,p,f6,4p,p,f6,p,f6,2p,p,b6,p,b6,p,b6,p,b6,p,b,p,b,p,b,p,b,p,b,p,b,p,b,p,b,1p.,2p.,p
+# firmware: 2.7.13.580fa29 | state = 24
+sops:
+    age:
+        - recipient: age1r6ys7m2gw4ukrfr7zssktvx9rrcfjjw2a79qfa7e4xy7a2lrjcrs0dnllu
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTZVFUMDhtQktTTTJWVmx3
+            NkxRSlpheEI5TVBOZnhRYk1pTHVZY1BBRWxrCkhWaEJjRExmQ3lCRTI0RkFnNUNY
+            R2NCL3FpVzNoWmVheEVyNXBtRGJINWMKLS0tIC9QOW9ZdUdLZGlxRERlS0xEVEcz
+            OFVXVzd1TzFmek92dmtBcXNKZXRlczgKdPBZhb1TABoJAesh8zMWKB3d3S4dj2RX
+            ulgll8pr7ljDmiwsBK0f4yGpFZfUHt328UFSMmIt5bUVrdxxpQFEoQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-10-30T04:09:07Z"
+    mac: ENC[AES256_GCM,data:RqF7ezPJccquyI0DT1xzVGHWqLAvhzxrJtVy0FmPs2aBrc08dRwebr2y791bxfbgv2/+UnqheWuj9+zLAPYOGFsYtdqEexJu/Bk5Tj9c2CWmmsJX3MAafzzEBWZXRXL7RTkWlW+2DaXwlo49i0uXRUgpXC7eHrJM0ZTaP9IXpkw=,iv:++WeyvreiSLpakWPKZatB6gtqZu0pjko/499EtUnS3A=,tag:lj6azbJmWd7avO3RXUdeJQ==,type:str]
+    encrypted_regex: channel_url|fixedPin|privateKey|password|username
+    version: 3.11.0
